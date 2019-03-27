@@ -13,7 +13,7 @@ body {
 }
 
 /* 小图标 */
-.icon { background: url("../images/icon-sprites.png") no-repeat top left; zoom: .5;  } 
+.icon { display: inline-block; vertical-align: middle; background: url("../images/icon-sprites.png") no-repeat top left; zoom: .5;  } 
 .icon-home { background-position: 0px 0px; width: 36px; height: 36px;  } 
 .active .icon-home { background-position: 0px -46px; width: 36px; height: 35px;  } 
 .icon-desktop { background-position: 0px -91px; width: 34px; height: 37px;  } 
@@ -38,3 +38,146 @@ body {
 .icon-zan { background-position: 0px -1154px; width: 38px; height: 36px;  } 
 .icon-comment { background-position: 0px -1200px; width: 38px; height: 36px;  } 
 .icon-clock { background-position: 0px -1246px; width: 20px; height: 20px;  } 
+
+/* 标签 */
+.mod-label {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  padding: 6px 0;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  background: $primary;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -3px;
+    width: 0;
+    height: 0;
+    border-right: 3px solid transparent;
+    border-bottom: 5px solid #0078bf;
+    content: "";
+  }
+
+  &--gradient {
+    background: linear-gradient(#5f8cff, #85b2ff);
+  }
+
+  &--brown-gradient {
+    padding: 4px 0;
+    font-size: 10px;
+    line-height: 12px;
+    background: linear-gradient(#d7b581, #e2d4bf);
+
+    &:after {
+      border-bottom-color: #88704b;
+    }
+  }
+}
+
+.mod-tag {
+  display: inline-block;
+  height: 20px;
+  line-height: 18px;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 15px;
+  background: $primary;
+  border: 1px solid $primary;
+
+  &--brown {
+    color: #a98a54;
+    border-color: #e5ca9a;
+    background: linear-gradient(#f9e6cb, #e5ca9a);
+  }
+
+  &--blue {
+    border-color: #3d7ca1;
+    background: linear-gradient(#5595ba, #3d7ca1);
+  }
+
+  &__inner {
+    display: inline-block;
+    transform: scale(.95);
+  }
+}
+
+/* swiper tab */
+.mbui-swiper-tab-tle {
+  &--auto {
+    .swiper-slide {
+      width: auto;
+      padding: 0 10px;
+      margin-right: 30px;
+    }
+  }
+
+  &--dark {
+    background: #2b2c34;
+    color: #9b9ca5;
+  }
+}
+
+.mbui-swiper-tab-tle .swiper-slide.active:after {
+  left: 50%;
+  right: auto;
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  transform: translate(-50%, 0);
+}
+
+/* 暂无数据 */
+.mod-no-data {
+  padding: 30px;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+/* 搜索 */
+.mod-search {
+}
+
+.mod-search-block {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  background: #eee;
+  border-radius: 20px;
+  text-align: center;
+
+  .icon {
+    margin: 0 10px 0 0;
+  }
+
+  &__txt {
+    font-size: 12px;
+    color: #919191;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &.active {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    .mod-search-block__txt {
+      display: none;
+    }
+
+    .mod-search-block__input {
+      display: block;
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+}
