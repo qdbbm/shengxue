@@ -1,11 +1,11 @@
 @charset "UTF-8";
-.news-item__bd-tle, .news-item__bd-txt, .news-item__bd-date {
+.news-item__bd-tle, .news-item__bd-txt, .news-item__bd-date, .mod-user-media__main .mumm-name-inner {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.news-list--lg .news-item__bd-txt {
+.news-list--lg .news-item__bd-txt, .mod-user-media__main .mumm-txt {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -13,11 +13,11 @@
   -webkit-box-orient: vertical;
 }
 
-.news-list .news-item:not(:first-of-type) {
+.news-list .news-item:not(:first-of-type), .mod-msg-list--has-bd .mod-msg-item:not(:first-of-type) {
   position: relative;
 }
 
-.news-list .news-item:not(:first-of-type)::before {
+.news-list .news-item:not(:first-of-type)::before, .mod-msg-list--has-bd .mod-msg-item:not(:first-of-type)::before {
   content: "";
   position: absolute;
   left: 0;
@@ -32,7 +32,7 @@
   z-index: 1;
 }
 
-.mod-search-block.active, .news-item {
+.mod-search-block.active, .news-item, .mod-tle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +48,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mod-tle {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body {
@@ -349,8 +355,9 @@ body {
 }
 
 /* 文章列表 */
-.news-list .news-item {
-  padding: 15px 0;
+.news-list .news-item:not(:first-of-type) {
+  padding: 15px 0 0;
+  margin: 15px 0 0;
 }
 
 .news-item__img {
@@ -382,4 +389,178 @@ body {
 
 .news-list--lg .news-item__bd-date {
   margin: 10px 0 0;
+}
+
+/* 用户媒体对象 */
+.mod-user-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mod-user-media__side {
+  position: relative;
+  width: 40px;
+  margin: 0 10px 0 0;
+}
+
+.mod-user-media__side .mums-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e2e2e2;
+}
+
+.mod-user-media__main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.mod-user-media__main .mumm-name-inner {
+  display: inline-block;
+  max-width: 10em;
+  vertical-align: middle;
+}
+
+.mod-user-media__main .mumm-date {
+  float: right;
+  font-size: 12px;
+  font-weight: 400;
+  color: #949494;
+}
+
+.mod-user-media__main .mumm-txt {
+  max-height: 36px;
+  margin: 5px 0 0;
+  overflow: hidden;
+  font-size: 12px;
+  color: #545454;
+}
+
+.mod-user-media__main .mumm-txt--more {
+  display: block;
+  max-height: unset;
+}
+
+.mod-user-media__main .mumm-more {
+  display: block;
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #b4b4b4;
+}
+
+/* 消息列表 */
+.mod-msg-list--has-bd .mod-msg-item:not(:first-of-type) {
+  padding: 15px 0 0;
+}
+
+.mod-msg-item:not(:first-of-type) {
+  margin: 15px 0 0;
+}
+
+.mod-msg-item__comment {
+  position: relative;
+  margin: 10px 0 0 50px;
+  padding: 10px 8px;
+  background: #efefef;
+  border-radius: 4px;
+}
+
+.mod-msg-item__comment:before {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #efefef;
+  content: "";
+}
+
+.mod-msg-item__comment .mmic-item {
+  font-size: 12px;
+}
+
+.mod-msg-item__comment .mmic-item:not(:first-of-type) {
+  margin: 5px 0 0;
+}
+
+.mod-msg-item__comment .mmic-item-name {
+  color: #617e90;
+}
+
+/* banner */
+.swiper-banner {
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 9px rgba(29, 149, 221, 0.5);
+          box-shadow: 0 1px 9px rgba(29, 149, 221, 0.5);
+}
+
+/* 标题 */
+.mod-tle {
+  height: 42px;
+  line-height: 42px;
+}
+
+.mod-tle-txt {
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.mod-tle-more {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* 课程 */
+.mod-course {
+  overflow: hidden;
+}
+
+.mod-course-list--lg .mod-course-item__img {
+  padding: 42% 0 0;
+}
+
+.mod-course-list--col-2 {
+  margin: 0 -10px -10px 0;
+  padding: 5px 0 0;
+}
+
+.mod-course-list--col-2 .mod-course-item {
+  float: left;
+  width: calc(50% - 10px);
+  margin: 0 10px 10px 0;
+}
+
+.mod-course-list--col-2 .mod-course-item__img {
+  padding: 57% 0 0;
+}
+
+.mod-course-item {
+  position: relative;
+}
+
+.mod-course-item:not(:first-of-type) {
+  margin: 10px 0 0;
+}
+
+.mod-course-item__inner {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.mod-course-item__img {
+  padding: 35% 0 0;
+  background-position: center top;
+}
+
+.mod-course-item .mod-label {
+  position: absolute;
+  top: -5px;
+  left: 18px;
 }

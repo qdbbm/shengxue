@@ -285,9 +285,9 @@ body {
   @extend %flex;
 
   .news-list & {
-    padding: 15px 0;
-
     &:not(:first-of-type) {
+      padding: 15px 0 0;
+      margin: 15px 0 0;
       @extend %border-t;
     }
   }
@@ -334,6 +334,198 @@ body {
       &-date {
         margin: 10px 0 0;
       }
+    }
+  }
+}
+
+/* 用户媒体对象 */
+.mod-user-media {
+  display: flex;
+
+  &__side {
+    position: relative;
+    width: 40px;
+    margin: 0 10px 0 0;
+
+    .mums-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $colorBorder;
+    }
+  }
+
+  &__main {
+    flex: 1;
+    overflow: hidden;
+
+    .mumm-name {
+      &-inner {
+        display: inline-block;
+        max-width: 10em;
+        vertical-align: middle;
+        @extend %ellipsis;
+      }
+    }
+
+    .mumm-date {
+      float: right;
+      font-size: 12px;
+      font-weight: 400;
+      color: #949494;
+    }
+
+    .mumm-txt {
+      max-height: 36px;
+      margin: 5px 0 0;
+      overflow: hidden;
+      font-size: 12px;
+      color: #545454;
+      @extend %ellipsis-lines-2;
+
+      &--more {
+        display: block;
+        max-height: unset;
+      }
+    }
+
+    .mumm-more {
+      display: block;
+      margin: 5px 0 0;
+      font-size: 12px;
+      color: #b4b4b4;
+    }
+  }
+}
+
+/* 消息列表 */
+.mod-msg {
+  &-list {
+    &--has-bd {
+      .mod-msg-item {
+        &:not(:first-of-type) {
+          padding: 15px 0 0;
+          @extend %border-t;
+        }
+      }
+    }
+  }
+
+  &-item {
+    &:not(:first-of-type) {
+      margin: 15px 0 0;
+    }
+
+    &__comment {
+      position: relative;
+      margin: 10px 0 0 50px;
+      padding: 10px 8px;
+      background: #efefef;
+      border-radius: 4px;
+
+      &:before {
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #efefef;
+        content: "";
+      }
+
+      .mmic-item {
+        font-size: 12px;
+
+        &:not(:first-of-type) {
+          margin: 5px 0 0;
+        }
+
+        &-name {
+          color: #617e90;
+        }
+      }
+    }
+  }
+}
+
+/* banner */
+.swiper-banner {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 9px rgba(29, 149, 221, 0.5);
+}
+
+/* 标题 */
+.mod-tle {
+  @extend %flex;
+  @extend %flex-s-b;
+  height: 42px;
+  line-height: 42px;
+
+  &-txt {
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 700;
+  }
+
+  &-more {
+    font-size: 12px;
+    color: #aaa;
+  }
+}
+
+/* 课程 */
+.mod-course {
+  overflow: hidden;
+
+  &-list {
+    &--lg {
+      .mod-course-item__img {
+        padding: 42% 0 0;
+      }
+    }
+
+    &--col-2 {
+      margin: 0 -10px -10px 0;
+      padding: 5px 0 0;
+
+      .mod-course {
+        &-item {
+          float: left;
+          width: calc(50% - 10px);
+          margin: 0 10px 10px 0;
+
+          &__img {
+            padding: 57% 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-item {
+    position: relative;
+
+    &:not(:first-of-type) {
+      margin: 10px 0 0;
+    }
+
+    &__inner {
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    &__img {
+      padding: 35% 0 0;
+      background-position: center top;
+    }
+
+    .mod-label {
+      position: absolute;
+      top: -5px;
+      left: 18px;
     }
   }
 }
