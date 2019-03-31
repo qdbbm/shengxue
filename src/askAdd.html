@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name=" renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>发起提问</title>
+  <link rel="stylesheet" href="css/plugins/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/mbui.min.css">
+  <!-- build:css css/site.min.css -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/page.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <header class="mbui-header">
+    <div class="mbui-header-left" onclick="javascript:history.back();">
+      <i class="mbui-icon-v-left mbui-header-icon"></i>
+    </div>
+    <h1 class="page-tt">发起提问</h1>
+    <div class="mbui-header-right">
+      <span class="mbui-header-icon">
+        <i class="icon icon-share"></i>
+      </span>
+    </div>
+  </header>
+  <!-- 头部 -->
+
+  <main id="pages" class="mbui-page-wrap">
+    <div class="mbui-page mbui-page--has-footer">
+      <div class="mod-user-media mod-user-media--lg mbui-pd-15 mbui-bg-white">
+        <div class="mod-user-media__side">
+          <img class="mums-img" src="images/user.jpg" alt="">
+        </div>
+        <div class="mod-user-media__main">
+          <h4 class="mumm-name">
+            <span class="mumm-name-inner">小弹老师</span>
+          </h4>
+          <p class="mumm-txt">
+            是田馥甄演唱的歌曲，由Jerry C谱曲
+          </p>
+        </div>
+      </div>
+
+      <div class="mbui-bg-white mbui-mt-10">
+        <div class="mbui-flex-s-b mbui-plr-15 mbui-ptb-10 mbui-bb">
+          <h3 class="mbui-lh">提问分类</h3>
+          <i class="mbui-icon-v-right mbui-mr-10 mbui-color-gray-light"></i>
+        </div>
+
+        <div class="mbui-pd-15">
+          <div>
+            <label class="mbui-radio">
+              <input class="mbui-radio-input" name="r1" type="radio">
+              <div class="mbui-radio-inner">
+                <p class="mbui-radio-txt">紧急提问</p>
+                <p class="mbui-radio-tag">1小时内回复</p>
+              </div>
+            </label>
+            <label class="mbui-radio mbui-ml-5">
+              <input class="mbui-radio-input" name="r1" type="radio">
+              <div class="mbui-radio-inner">
+                <p class="mbui-radio-txt">一般提问</p>
+                <p class="mbui-radio-tag">24小时内</p>
+              </div>
+            </label>
+            <label class="mbui-radio mbui-ml-5">
+              <input class="mbui-radio-input" name="r1" type="radio">
+              <div class="mbui-radio-inner">
+                <p class="mbui-radio-txt">交流提问</p>
+                <p class="mbui-radio-tag">免费</p>
+              </div>
+            </label>
+          </div>
+
+          <div class="mbui-mt-10">
+            <input class="mbui-input publish-input" type="text" placeholder="点击输入标题......">
+            <textarea class="mbui-textarea publish-textarea" placeholder="请描述您的问题，老师会详细为您解答…（60字以内）"></textarea>
+            <ul class="mbui-uploader mbui-pd-0 mbui-clearfix" id="uploaderFiles">
+              <li class="mbui-uploader__item">
+                <a class="mbui-uploader__item-img" style="background-image: url(images/news.jpg)"
+                  data-fancybox="gallery" href="images/news.jpg">
+                </a>
+                <span class="mbui-uploader__item-del">&times;</span>
+              </li>
+              <li class="mbui-uploader__item">
+                <a class="mbui-uploader__item-img" style="background-image: url(images/news.jpg)"
+                  data-fancybox="gallery" href="images/news.jpg">
+                </a>
+                <span class="mbui-uploader__item-del">&times;</span>
+              </li>
+              <li class="mbui-uploader__field">
+                <input class="mbui-uploader__input" id="uploaderInput" type="file" accept="image/*" multiple>
+                <div class="mbui-uploader__field-inner">
+                  <svg class="mbui-icon mbui-color-primary" aria-hidden="true">
+                    <use xlink:href="#icon-increase"></use>
+                  </svg>
+                  <p class="mbui-fs-12 mbui-color-gray-light">上传图片</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end .page -->
+  </main>
+  <!-- end .page-wrap -->
+
+  <div class="mbui-fixed-bottom">
+    <div class="mbui-bg-white mbui-pd-10 mbui-flex-v-c">
+      <label class="mbui-checkbox">
+        <input class="mbui-checkbox-input" type="checkbox">
+        <span class="mod-icon-checkbox"></span>
+        <span class="mbui-checkbox-label">隐私发布</span>
+      </label>
+      <div class="mbui-flex1 mbui-pl-40">
+        <a class="mbui-btn mbui-btn-primary mbui-btn-block mbui-btn-round" href="#">发起问题</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/lib/jquery-2.2.3.min.js"></script>
+  <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
+  <script src="js/plugins/jquery.fancybox.min.js"></script>
+  <script src="js/mbui.min.js"></script>
+</body>
+
+</html>

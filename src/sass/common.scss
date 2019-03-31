@@ -124,6 +124,9 @@ body {
   width: 34px;
   height: 30px;
 }
+.active .icon-heart {
+  background-position: -43px -1114px;
+}
 .icon-zan {
   background-position: 0px -1154px;
   width: 38px;
@@ -147,6 +150,7 @@ body {
   width: 28px;
   padding: 6px 0;
   font-size: 12px;
+  font-weight: 400;
   color: #fff;
   text-align: center;
   background: $primary;
@@ -182,10 +186,11 @@ body {
 
 .mod-tag {
   display: inline-block;
-  height: 20px;
-  line-height: 18px;
-  padding: 0 5px;
+  height: 16px;
+  line-height: 14px;
+  padding: 0 3px;
   font-size: 12px;
+  font-weight: 400;
   color: #fff;
   border-radius: 15px;
   background: $primary;
@@ -342,6 +347,17 @@ body {
 .mod-user-media {
   display: flex;
 
+  &--lg {
+    .mod-user-media__side {
+      width: 50px;
+
+      .mums-img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
   &__side {
     position: relative;
     width: 40px;
@@ -474,6 +490,18 @@ body {
     font-size: 12px;
     color: #aaa;
   }
+
+  &-2 {
+    height: 28px;
+    line-height: 26px;
+    padding: 0 23px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color: $primary;
+    background: #eef8ff;
+    border: 1px solid $primary;
+  }
 }
 
 /* 课程 */
@@ -526,6 +554,229 @@ body {
       position: absolute;
       top: -5px;
       left: 18px;
+    }
+  }
+}
+
+/* 升级 */
+.mod-upgrade {
+  @extend %flex;
+  @extend %flex-v-c;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: url(../images/upgrade-bg.png) no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+
+  &-bd {
+    @extend %flex1;
+    overflow: hidden;
+    color: #ac9976;
+
+    &__tle {
+      font-size: 13px;
+    }
+
+    &__txt {
+      font-size: 17px;
+      font-weight: 700;
+    }
+  }
+}
+
+/* 步骤条 */
+.mod-step {
+  &-list {
+    position: relative;
+    padding: 0 0 0 30px;
+
+    &:before {
+      position: absolute;
+      top: 10px;
+      left: 6px;
+      z-index: -1;
+      width: 1px;
+      height: 100%;
+      background: #d2d2d2;
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 6px;
+      width: 1px;
+      height: 10px;
+      background: #fff;
+      content: "";
+    }
+  }
+
+  &-item {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #939393;
+
+    &.active {
+      color: #333;
+
+      &:after {
+        background: $primary;
+      }
+    }
+
+    &:not(:first-of-type) {
+      @extend %border-t;
+    }
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      width: 12px;
+      height: 12px;
+      background: #dedede;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 1px 4px rgba(202, 202, 202, 0.26);
+      content: "";
+      transform: translate(0, -50%);
+      box-sizing: border-box;
+    }
+  }
+}
+
+.mod-fixed-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 100;
+  display: block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  background: linear-gradient(lighten($primary, 5%), $primary);
+}
+
+
+/* 单选框、复选框美化 */
+.mbui-radio {
+  &-inner {
+    display: inline-block;
+    padding: 4px 20px 1px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid $colorBorder;
+  }
+
+  &-txt {
+    font-size: 13px;
+    line-height: 1.2;
+    color: #5f4343;
+  }
+
+  &-tag {
+    font-size: 12px;
+    color: #a4a4a4;
+    transform: scale(.8);
+  }
+}
+
+.mbui-radio-input:checked ~ .mbui-radio-inner {
+  border-color: $primary;
+
+  .mbui-radio-txt,
+  .mbui-radio-tag {
+    color: $primary;
+  }
+}
+
+.mod-icon-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  border: 1px solid $colorBorder;
+  vertical-align: middle;
+}
+
+.mbui-checkbox-label {
+  font-size: 12px;
+  color: #656565;
+}
+
+.mbui-checkbox-input:checked ~ .mod-icon-checkbox {
+  background: $primary;
+  border-color: $primary;
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 2px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    content: "";
+    transform: translate(-50%, -70%) rotate(-45deg);
+  }
+}
+
+/* 上传 */
+.mbui-uploader__field, .mbui-uploader__item {
+  width: calc(33.333333% - 10px);
+  padding: calc(33.333333% - 10px) 0 0;
+}
+
+.mbui-uploader__field {
+  border: 1px dashed $colorBorder;
+  border-radius: 5px;
+  background: none;
+  padding: calc(33.333333% - 12px) 0 0;
+}
+
+/* 商品媒体对象 */
+.mod-goods-media {
+  @extend %flex;
+
+  &__img {
+    width: 77px;
+    height: 82px;
+    margin: 0 10px 0 0;
+    background-color: #fff;
+  }
+
+  &__bd {
+    @extend %flex1;
+    overflow: hidden;
+
+    .mgmb-tle {
+      line-height: 1.2;
+      height: 32px;
+      @extend %ellipsis-lines-2;
+    }
+
+    .mgmb-txt,
+    .mgmb-price {
+      margin: 5px 0 0;
+    }
+
+    .mgmb-txt {
+      font-size: 12px;
+      color: #999;
+    }
+
+    .mgmb-price {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ff3535;
     }
   }
 }

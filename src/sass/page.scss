@@ -21,10 +21,10 @@ $colorBorder: #e2e2e2;
   margin: -30px 0 0;
 }
 
-.course-about {
+.course-info {
   &-tle {
     position: relative;
-    padding: 0 0 0 25px;
+    padding: 0 0 0 30px;
     font-size: 13px;
     font-weight: 400;
     color: #9e9e9e;
@@ -39,10 +39,189 @@ $colorBorder: #e2e2e2;
       background-size: 19px auto;
       content: "";
     }
+
+    &--no-bg {
+      padding: 0;
+
+      &:after {
+        content: none;
+      }
+    }
   }
 
   &-txt {
     font-size: 13px;
     padding: 15px 0 0 10px;
   }
+}
+
+.recom-list {
+  padding: 0 0 12px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin: 0 -10px 0 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.recom-item {
+  position: relative;
+  display: inline-block;
+  max-width: 135px;
+  padding: 10px 5px 25px;
+  margin: 0 10px 0 0;
+  text-align: center;
+  border: 1px solid $colorBorder;
+  border-radius: 3px;
+
+  &__img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+  }
+
+  .mbui-btn {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    height: 24px;
+    line-height: 24px;
+    transform: translate(-50%, 0);
+  }
+}
+
+.publish-input {
+  font-size: 17px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.publish-textarea {
+  height: 160px;
+  padding: 0;
+  border: 0;
+}
+
+.zj-reply {
+  p + p {
+    margin: 15px 0 0;
+  }
+
+  .mbui-uploader {
+    padding: 15px 0 0;
+  }
+}
+
+.mall-tle {
+  @extend %flex;
+  @extend %flex-s-b;
+  line-height: 18px;
+
+  &-txt {
+    line-height: 18px;
+    padding: 0 0 0 12px;
+    border-left: 4px solid $primary;
+  }
+
+  &-more {
+    font-size: 12px;
+    color: #c9c9c9;
+  }
+}
+
+.mall-list {
+  padding: 5px;
+}
+
+.mall-item {
+  padding: 5px;
+  
+  &-inner {
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+  }
+
+  &-img {
+    padding-top: 100%;
+  }
+
+  &-bd {
+    padding: 7px;
+
+    &__tle {
+      @extend %ellipsis;
+    }
+
+    &__price {
+      font-size: 12px;
+      color: #ff3535;
+
+      .mibp-num {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.goods-info {
+  @extend %flex;
+  padding: 15px 0 10px 12px;
+
+  &-bd {
+    @extend %flex1;
+    overflow: hidden;
+  }
+
+  &-tle {
+    line-height: 1.2;
+  }
+
+  &-price {
+    color: #ff3535;
+
+    &__num {
+      font-size: 22px;
+    }
+  }
+
+  &-fav {
+    position: relative;
+    display: block;
+    padding: 0 40px;
+    text-align: center;
+
+    &.active {
+      color: $primary;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 40px;
+      background: $colorBorder;
+      content: "";
+    }
+  }
+}
+
+.goods-detail {
+  padding: 15px 12px;
+
+  &-con {
+    p + p {
+      margin: 15px 0 0;
+    }
+  }
+}
+
+.goods-meta {
+  font-size: 12px;
+  color: #929292;
+}
+
+.order .mod-goods-media {
+  padding: 7px;
+  background: #f5f5f5;
 }
