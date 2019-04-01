@@ -4,7 +4,7 @@ $primary: #009bf7;
 $primaryLight: #e1f3fe;
 $second: #caab75;
 $danger: #ff3535;
-$colorBorder: #e2e2e2;
+$colorBorder: #e5e5e5;
 
 @import 'd:/wamp/www/mobile-docs/src/sass/sandal/function';
 
@@ -103,6 +103,10 @@ $colorBorder: #e2e2e2;
 }
 
 .zj-reply {
+  p {
+     word-break: break-all;
+  }
+
   p + p {
     margin: 15px 0 0;
   }
@@ -224,4 +228,63 @@ $colorBorder: #e2e2e2;
 .order .mod-goods-media {
   padding: 7px;
   background: #f5f5f5;
+}
+
+.user-hd {
+  background: url("../images/user-hd-bg.png") no-repeat right bottom;
+  background-size: contain;
+}
+
+.record-item {
+  position: relative;
+
+  &:not(:first-of-type) {
+    margin: 10px 0 0;
+  }
+
+  &-media {
+    &__img {
+      width: 145px;
+      height: 95px;
+    }
+  }
+
+  &-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+.jf-item {
+  position: relative;
+
+  &:not(:first-of-type) {
+    @extend %border-t;
+  }
+}
+
+.lecture {
+  &-item {
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+
+    &:not(:first-of-type) {
+      margin: 10px 0 0;
+    }
+  }
+}
+
+.article {
+  &-bd {
+    img {
+      display: block;
+      margin: 20px 0;
+    }
+
+    p {
+      margin: 25px 0;
+      font-size: 13px;
+    }
+  }
 }

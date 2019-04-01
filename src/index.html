@@ -66,7 +66,7 @@
       <div class="mbui-plr-15 mbui-ptb-15 mbui-bg-white">
         <ul class="mbui-row">
           <li class="mbui-col-xs-3">
-            <a class="mbui-db mbui-tac" href="#">
+            <a class="mbui-db mbui-tac" href="course_list.html">
               <i class="icon icon-video"></i>
               <p class="mbui-mt-10">免费课程</p>
             </a>
@@ -78,13 +78,13 @@
             </a>
           </li>
           <li class="mbui-col-xs-3">
-            <a class="mbui-db mbui-tac" href="#">
+            <a class="mbui-db mbui-tac" href="article.html">
               <i class="icon icon-article"></i>
               <p class="mbui-mt-10">文章分享</p>
             </a>
           </li>
           <li class="mbui-col-xs-3">
-            <a class="mbui-db mbui-tac" href="#">
+            <a class="mbui-db mbui-tac" href="question.html">
               <i class="icon icon-ask"></i>
               <p class="mbui-mt-10">专家问答</p>
             </a>
@@ -96,11 +96,11 @@
       <div class="mbui-bg-white mbui-mt-10 mbui-plr-15 mbui-pb-10">
         <div class="mod-tle">
           <h3 class="mod-tle-txt">免费课程</h3>
-          <a class="mod-tle-more" href="#">更多&gt;</a>
+          <a class="mod-tle-more" href="course_list.html">更多&gt;</a>
         </div>
 
         <div class="mod-course-list mod-course-list--lg mbui-mt-5">
-          <div class="mod-course-item">
+          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
             <div class="mod-course-item__inner">
               <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xb.jpg);"></div>
             </div>
@@ -113,7 +113,7 @@
       <div class="mbui-bg-white mbui-plr-15 mbui-pb-10">
         <div class="mod-tle">
           <h3 class="mod-tle-txt">会员课程</h3>
-          <a class="mod-tle-more" href="#">更多&gt;</a>
+          <a class="mod-tle-more" href="course_list.html">更多&gt;</a>
         </div>
 
         <div class="mod-course">
@@ -138,11 +138,11 @@
       <div class="mbui-bg-white mbui-plr-15 mbui-pb-15 mbui-bb">
         <div class="mod-tle">
           <h3 class="mod-tle-txt">文章推荐</h3>
-          <a class="mod-tle-more" href="#">更多&gt;</a>
+          <a class="mod-tle-more" href="article.html">更多&gt;</a>
         </div>
 
         <ul class="news-list">
-          <li class="news-item">
+          <li class="news-item" onclick="javascript:common.goPage('article_detail.html');">
             <div class="news-item__img mbui-bg-cover" style="background-image: url(images/news.jpg);"></div>
             <div class="news-item__bd">
               <h4 class="news-item__bd-tle">必看！弹琴吧新版（IOS）更新说明</h4>
@@ -180,7 +180,7 @@
       <!-- end 文章推荐 -->
 
       <div class="mbui-tac mbui-mt-10">
-        <a class="mbui-fs-13 mbui-color-gray-light" href="#">点击查看更多</a>
+        <a class="mbui-fs-13 mbui-color-gray-light" href="article.html">点击查看更多</a>
       </div>
     </div>
     <!-- end .page -->
@@ -201,13 +201,13 @@
         </div>
         <p class="item-txt">课程</p>
       </li>
-      <li class="mbui-nav-item">
+      <li class="mbui-nav-item" onclick="javascript:common.goPage('mall.html');">
         <div class="item-icon">
           <i class="icon icon-buy"></i>
         </div>
         <p class="item-txt">商城</p>
       </li>
-      <li class="mbui-nav-item">
+      <li class="mbui-nav-item" onclick="javascript:common.goPage('my.html');">
         <div class="item-icon">
           <i class="icon icon-my"></i>
         </div>

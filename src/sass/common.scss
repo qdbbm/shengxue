@@ -4,7 +4,7 @@ $primary: #009bf7;
 $primaryLight: #e1f3fe;
 $second: #caab75;
 $danger: #ff3535;
-$colorBorder: #e2e2e2;
+$colorBorder: #e5e5e5;
 
 @import "d:/wamp/www/mobile-docs/src/sass/sandal/function";
 
@@ -131,6 +131,9 @@ body {
   background-position: 0px -1154px;
   width: 38px;
   height: 36px;
+}
+.active .icon-zan {
+  background-position: -48px -1154px;
 }
 .icon-comment {
   background-position: 0px -1200px;
@@ -779,4 +782,57 @@ body {
       color: #ff3535;
     }
   }
+}
+
+/* 按钮 */
+.mbui-btn-primary--light {
+  background: #e1f3fe;
+  color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background: #e1f3fe;
+  }
+}
+
+.mbui-media-item {
+  &__img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* 评论条 */
+.mod-comment-bar {
+  @extend %flex;
+  @extend %flex-v-c;
+  padding: 6px 0 6px 10px;
+  background: #fff;
+  border-top: 1px solid $colorBorder;
+
+  &__field {
+    @extend %flex1;
+    overflow: hidden;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px 15px;
+    background: #eee;
+    border-radius: 20px;
+  }
+
+  &__action {
+    position: relative;
+    padding: 0 13px;
+
+    .mbui-remind-num {
+      top: -10px;
+      right: -7px;
+    }
+  }
+}
+
+.mbui-remind-num {
+  background: $primary;
 }

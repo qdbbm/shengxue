@@ -4,6 +4,25 @@
   text-overflow: ellipsis;
 }
 
+.jf-item:not(:first-of-type) {
+  position: relative;
+}
+
+.jf-item:not(:first-of-type)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  right: 0;
+  height: 0;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  border-top: 1px solid #e5e5e5;
+  z-index: 1;
+}
+
 .mall-tle, .goods-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,7 +100,7 @@
   padding: 10px 5px 25px;
   margin: 0 10px 0 0;
   text-align: center;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #e5e5e5;
   border-radius: 3px;
 }
 
@@ -111,6 +130,10 @@
   height: 160px;
   padding: 0;
   border: 0;
+}
+
+.zj-reply p {
+  word-break: break-all;
 }
 
 .zj-reply p + p {
@@ -203,7 +226,7 @@
   left: 0;
   width: 1px;
   height: 40px;
-  background: #e2e2e2;
+  background: #e5e5e5;
   content: "";
 }
 
@@ -223,4 +246,51 @@
 .order .mod-goods-media {
   padding: 7px;
   background: #f5f5f5;
+}
+
+.user-hd {
+  background: url("../images/user-hd-bg.png") no-repeat right bottom;
+  background-size: contain;
+}
+
+.record-item {
+  position: relative;
+}
+
+.record-item:not(:first-of-type) {
+  margin: 10px 0 0;
+}
+
+.record-item-media__img {
+  width: 145px;
+  height: 95px;
+}
+
+.record-item-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.jf-item {
+  position: relative;
+}
+
+.lecture-item {
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+}
+
+.lecture-item:not(:first-of-type) {
+  margin: 10px 0 0;
+}
+
+.article-bd img {
+  display: block;
+  margin: 20px 0;
+}
+
+.article-bd p {
+  margin: 25px 0;
+  font-size: 13px;
 }

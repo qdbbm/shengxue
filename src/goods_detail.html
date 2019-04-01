@@ -93,29 +93,19 @@
 
   <div class="mbui-fixed-bottom">
     <div class="mbui-ptb-10 mbui-plr-50 mbui-bg-gray">
-      <a class="mbui-btn mbui-btn-primary mbui-btn-block mbui-btn-round" href="#">立即购买</a>
+      <a class="mbui-btn mbui-btn-primary mbui-btn-block mbui-btn-round" href="orderConfirm.html">立即购买</a>
     </div>
   </div>
   <script src="js/lib/jquery-2.2.3.min.js"></script>
   <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
   <script src="js/plugins/swiper.min.js"></script>
   <script src="js/mbui.min.js"></script>
+  <script src="js/common.js"></script>
   <script>
     // swiper banner 初始化
     swiper.initSwiperBanner();
 
     $(function () {
-
-      // 收藏
-      $('.js-fav').on('click', function () {
-        if ($(this).hasClass('active')) {
-          $(this).removeClass('active');
-          $(this).find('p').html('收藏');
-        } else {
-          $(this).addClass('active');
-          $(this).find('p').html('已收藏');
-        }
-      })
 
     })
   </script>

@@ -18,7 +18,7 @@ $(function () {
     })
 
     // 全文
-    $('.js-txt-more').on('click', function () {        
+    $('.js-txt-more').on('click', function () {
         var _txtObj = $(this).siblings('.mumm-txt');
         if (!_txtObj.hasClass('mumm-txt--more')) {
             _txtObj.addClass('mumm-txt--more');
@@ -27,6 +27,22 @@ $(function () {
             _txtObj.removeClass('mumm-txt--more');
             $(this).html('全文');
         }
+    })
+
+    // 收藏
+    $('.js-fav').on('click', function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).find('p').html('收藏');
+        } else {
+            $(this).addClass('active');
+            $(this).find('p').html('已收藏');
+        }
+    })
+
+    // 点赞
+    $('.js-zan').on('click', function () {
+        $(this).toggleClass('active');
     })
 
 })
