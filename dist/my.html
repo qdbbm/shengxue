@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name=" renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>个人中心</title>
+  <link rel="stylesheet" href="css/mbui.min.css">
+  <link rel="stylesheet" href="css/site.min.css">
+</head>
+
+<body>
+  <header class="mbui-header">
+    <div class="mbui-header-left" onclick="javascript:history.back();">
+      <i class="mbui-icon-v-left mbui-header-icon"></i>
+    </div>
+    <h1 class="page-tt">个人中心</h1>
+    <div class="mbui-header-right">
+      <span class="mbui-header-icon">
+        <i class="icon icon-share"></i>
+      </span>
+    </div>
+  </header>
+  <!-- 头部 -->
+
+  <main id="pages" class="mbui-page-wrap">
+    <div class="mbui-page mbui-page--has-footer">
+      <div class="mbui-ptb-20 mbui-plr-10 mbui-bg-white user-hd">
+        <div class="mbui-media-item mbui-flex-v-c mbui-media-item--round">
+          <img class="mbui-media-item__img" src="images/user.jpg" alt="">
+          <div class="mbui-media-item__bd">
+            <h4 class="mbui-media-item__tle">大宝哥<span class="mod-tag mod-tag--brown mbui-ml-10"><span
+                  class="mod-tag__inner">黄金VIP</span></span></h4>
+            <p class="mbui-media-item__txt mbui-mt-5">
+              <span class="mod-tag">
+                <i class="icon icon-gou"></i>
+                <span class="mod-tag__inner">已认证</span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <ul class="mbui-row mbui-mt-10 mbui-bg-white mbui-ptb-15">
+        <li class="mbui-col-xs-4 mbui-tac">
+          <i class="icon icon-qianbao"></i>
+          <p class="mbui-mt-5">我的钱包</p>
+        </li>
+        <li class="mbui-col-xs-4 mbui-tac mbui-bl" onclick="javascript:common.goPage('jifen.html');">
+          <i class="icon icon-money"></i>
+          <p class="mbui-mt-5">我的积分</p>
+        </li>
+        <li class="mbui-col-xs-4 mbui-tac mbui-bl" onclick="javascript:common.goPage('question_list.html');">
+          <i class="icon icon-msg"></i>
+          <p class="mbui-mt-5">我的提问</p>
+        </li>
+      </ul>
+
+      <div class="mbui-pd-10">
+        <a class="mbui-br-5 mbui-ovh mbui-db" href="#">
+          <img src="images/wsjs.jpg" alt="我是讲师">
+        </a>
+      </div>
+
+      <div class="mbui-line-list mbui-line-list--indent mbui-line-list--flex">
+        <a class="mbui-line-item mbui-ptb-10" href="study_record.html">
+          <h3 class="item-tt">学习记录</h3>
+          <i class="mbui-icon-v-right"></i>
+        </a>
+        <a class="mbui-line-item mbui-ptb-10" href="#">
+          <h3 class="item-tt">阅读记录</h3>
+          <i class="mbui-icon-v-right"></i>
+        </a>
+        <a class="mbui-line-item mbui-ptb-10" href="order.html">
+          <h3 class="item-tt">我的订单</h3>
+          <i class="mbui-icon-v-right"></i>
+        </a>
+      </div>
+    </div>
+    <!-- end .page -->
+  </main>
+  <!-- end .page-wrap -->
+
+  <footer class="mbui-fixed-bottom">
+    <ul class="mbui-nav-list mbui-nav-list--bottom">
+      <li class="mbui-nav-item" onclick="javascript:common.goPage('index.html');">
+        <div class="item-icon">
+          <i class="icon icon-home"></i>
+        </div>
+        <p class="item-txt">首页</p>
+      </li>
+      <li class="mbui-nav-item" onclick="javascript:common.goPage('course_list.html');">
+        <div class="item-icon">
+          <i class="icon icon-desktop"></i>
+        </div>
+        <p class="item-txt">课程</p>
+      </li>
+      <li class="mbui-nav-item" onclick="javascript:common.goPage('mall.html');">
+        <div class="item-icon">
+          <i class="icon icon-buy"></i>
+        </div>
+        <p class="item-txt">商城</p>
+      </li>
+      <li class="mbui-nav-item active">
+        <div class="item-icon">
+          <i class="icon icon-my"></i>
+        </div>
+        <p class="item-txt">我的</p>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/lib/jquery-2.2.3.min.js"></script>
+  <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
+  <script src="js/mbui.min.js"></script>
+</body>
+
+</html>

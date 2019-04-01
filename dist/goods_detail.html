@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name=" renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>商品详情</title>
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <link rel="stylesheet" href="css/mbui.min.css">
+  <link rel="stylesheet" href="css/site.min.css">
+</head>
+
+<body>
+  <header class="mbui-header">
+    <div class="mbui-header-left" onclick="javascript:history.back();">
+      <i class="mbui-icon-v-left mbui-header-icon"></i>
+    </div>
+    <h1 class="page-tt">商品详情</h1>
+    <div class="mbui-header-right">
+      <span class="mbui-header-icon">
+        <i class="icon icon-share"></i>
+      </span>
+    </div>
+  </header>
+  <!-- 头部 -->
+
+  <main id="pages" class="mbui-page-wrap">
+    <div class="mbui-page mbui-page--has-footer">
+      <div class="swiper-container" data-swiper-banner>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/detail-ban.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/detail-ban.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/detail-ban.jpg" alt="">
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- end 轮播图 -->
+
+      <div class="goods-info mbui-bg-white">
+        <div class="goods-info-bd">
+          <h3 class="goods-info-tle">GEEK智能轻便款K2</h3>
+          <p class="goods-info-price">￥<span class="goods-info-price__num">3799</span></p>
+        </div>
+        <a class="goods-info-fav js-fav" href="javascript:;">
+          <i class="icon icon-heart"></i>
+          <p>收藏</p>
+        </a>
+      </div>
+
+      <div class="goods-detail mbui-bg-white mbui-mt-10">
+        <div class="mall-tle">
+          <h3 class="mall-tle-txt">商品详情</h3>
+        </div>
+        <ul class="goods-meta mbui-mt-20">
+          <li>品牌: GEEK/极客型号: P2/P3/A2/A3</li>
+          <li>面板材质: 云杉木</li>
+          <li>指板材质: 桃花心木</li>
+          <li>背侧板材质: 沙比利</li>
+          <li>品位: 21卷</li>
+          <li>弦器: 封闭旋钮</li>
+          <li>价格区间: 1001-3000元</li>
+          <li>吉他尺寸: 41英寸箱体</li>
+          <li>材质分类: 合板</li>
+          <li>适用对象: 专业演奏 初学者 家庭教学 男女通用</li>
+          <li>颜色分类: P4简约2019款智能吉他</li>
+        </ul>
+        <div class="goods-detail-con mbui-mt-20">
+          <p>
+            <img src="images/detail-img.jpg" alt="商品详情">
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end .page -->
+  </main>
+  <!-- end .page-wrap -->
+
+  <div class="mbui-fixed-bottom">
+    <div class="mbui-ptb-10 mbui-plr-50 mbui-bg-gray">
+      <a class="mbui-btn mbui-btn-primary mbui-btn-block mbui-btn-round" href="orderConfirm.html">立即购买</a>
+    </div>
+  </div>
+  <script src="js/lib/jquery-2.2.3.min.js"></script>
+  <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
+  <script src="js/plugins/swiper.min.js"></script>
+  <script src="js/mbui.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    // swiper banner 初始化
+    swiper.initSwiperBanner();
+
+    $(function () {
+
+    })
+  </script>
+</body>
+
+</html>

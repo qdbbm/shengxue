@@ -528,6 +528,10 @@ body {
           width: calc(50% - 10px);
           margin: 0 10px 10px 0;
 
+          &:not(:first-of-type) {
+            margin-top: 0;
+          }
+
           &__img {
             padding: 57% 0 0;
           }
