@@ -11,6 +11,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <title>确认订单</title>
+  <link rel="stylesheet" href="css/plugins/mobiscroll.min.css">
   <link rel="stylesheet" href="css/mbui.min.css">
   <!-- build:css css/site.min.css -->
   <link rel="stylesheet" href="css/common.css">
@@ -57,7 +58,11 @@
         <ul class="mbui-line-list mbui-line-list--flex">
           <li class="mbui-line-item mbui-plr-0">
             <p class="item-tt">代金券</p>
-            <span class="item-append">无代金券可用</span>
+            <select class="mob-select">
+              <option value="0">无代金券可用</option>
+              <option value="10">10元代金券</option>
+              <option value="20">20元代金券</option>
+            </select>
             <i class="mbui-icon-v-right" style="margin-right: -10px;"></i>
           </li>
           <li class="mbui-line-item mbui-plr-0">
@@ -79,7 +84,11 @@
 
   <script src="js/lib/jquery-2.2.3.min.js"></script>
   <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
+  <script src="js/plugins/mobiscroll.min.js"></script>
   <script src="js/mbui.min.js"></script>
+  <script>
+    mobiscroll.initSelect('mob-select', 'mbui-input mbui-tar mbui-mr-10');
+  </script>
 </body>
 
 </html>
