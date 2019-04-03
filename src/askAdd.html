@@ -12,6 +12,7 @@
   <meta name="keywords" content="">
   <title>发起提问</title>
   <link rel="stylesheet" href="css/plugins/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/plugins/mobiscroll.min.css">
   <link rel="stylesheet" href="css/mbui.min.css">
   <!-- build:css css/site.min.css -->
   <link rel="stylesheet" href="css/common.css">
@@ -50,9 +51,18 @@
       </div>
 
       <div class="mbui-bg-white mbui-mt-10">
-        <div class="mbui-flex-s-b mbui-plr-15 mbui-ptb-10 mbui-bb">
-          <h3 class="mbui-lh">提问分类</h3>
-          <i class="mbui-icon-v-right mbui-mr-10 mbui-color-gray-light"></i>
+        <div class="mbui-form-item mbui-bb">
+          <label class="item-label">
+            提问分类
+          </label>
+          <div class="item-field">
+            <select class="mob-select">
+              <option value="1">分类1</option>
+              <option value="2">分类2</option>
+              <option value="3">分类3</option>
+            </select>
+          </div>
+          <i class="mbui-icon-v-right"></i>
         </div>
 
         <div class="mbui-pd-15">
@@ -129,7 +139,11 @@
   <script src="js/lib/jquery-2.2.3.min.js"></script>
   <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
   <script src="js/plugins/jquery.fancybox.min.js"></script>
+  <script src="js/plugins/mobiscroll.min.js"></script>
   <script src="js/mbui.min.js"></script>
+  <script>
+    mobiscroll.initSelect('mob-select', 'mbui-text mbui-tar mbui-pr-0');
+  </script>
 </body>
 
 </html>

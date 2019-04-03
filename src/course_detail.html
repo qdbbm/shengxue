@@ -34,14 +34,14 @@
   <!-- 头部 -->
 
   <main id="pages" class="mbui-page-wrap">
-    <div class="mbui-page">
+    <div class="mbui-page mbui-page--has-footer">
       <div class="course-video">
         <video src="http://www.w3school.com.cn/i/movie.ogg" controls="controls">
           your browser does not support the video tag
         </video>
       </div>
 
-      <div class="mbui-plr-15 mbui-pb-20">
+      <div class="mbui-plr-15">
         <div class="course-detail mbui-bg-white mbui-br-5 mbui-plr-5 mbui-pb-20">
           <div class="mbui-swiper-tab-wrap">
             <div class="swiper-container mbui-swiper-tab-tle" id="mbui-swiper-tab-tle">
@@ -208,6 +208,26 @@
   <!-- end .page-wrap -->
 
   <a class="mod-fixed-btn" href="askAdd.html">提问</a>
+
+  <div class="mbui-fixed-bottom">
+    <div class="mod-comment-bar">
+      <div class="mod-comment-bar__field">
+        <input class="mod-comment-bar__input mbui-input" type="text" placeholder="点击输入内容文字...">
+      </div>
+      <a class="mod-comment-bar__action" href="javascript:;">
+        <i class="icon icon-comment"></i>
+        <span class="mbui-remind-num">235</span>
+      </a>
+      <a class="mod-comment-bar__action js-zan" href="javascript:;">
+        <i class="icon icon-zan"></i>
+        <span class="mbui-remind-num">60</span>
+      </a>
+      <a class="mod-comment-bar__action js-fav" href="javascript:;">
+        <i class="icon icon-heart"></i>
+      </a>
+      <a class="mod-comment-bar__btn mbui-hide" href="javascript:;">发表</a>
+    </div>
+  </div>
 
   <script src="js/lib/jquery-2.2.3.min.js"></script>
   <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>

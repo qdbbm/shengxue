@@ -657,7 +657,7 @@ body {
 
 .mod-fixed-btn {
   position: fixed;
-  bottom: 40px;
+  bottom: 60px;
   right: 20px;
   z-index: 100;
   display: block;
@@ -834,6 +834,12 @@ body {
       top: -10px;
       right: -7px;
     }
+  }
+
+  &__btn {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
   }
 }
 

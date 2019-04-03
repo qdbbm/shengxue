@@ -45,6 +45,17 @@ $(function () {
         $(this).toggleClass('active');
     })
 
+    // 发表
+    $('.mod-comment-bar__input').on('focus', function () {
+        $(this).parent().siblings('.mod-comment-bar__action').addClass('mbui-hide');
+        $(this).parent().siblings('.mod-comment-bar__btn').removeClass('mbui-hide');
+    })
+
+    $('.mod-comment-bar__input').on('blur', function () {
+        $(this).parent().siblings('.mod-comment-bar__action').removeClass('mbui-hide');
+        $(this).parent().siblings('.mod-comment-bar__btn').addClass('mbui-hide');
+    })
+
 })
 
 function openShareTips() {

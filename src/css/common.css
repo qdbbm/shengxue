@@ -686,7 +686,7 @@ body {
 
 .mod-fixed-btn {
   position: fixed;
-  bottom: 40px;
+  bottom: 60px;
   right: 20px;
   z-index: 100;
   display: block;
@@ -853,6 +853,12 @@ body {
 .mod-comment-bar__action .mbui-remind-num {
   top: -10px;
   right: -7px;
+}
+
+.mod-comment-bar__btn {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 15px;
 }
 
 .mbui-remind-num {
