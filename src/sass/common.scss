@@ -145,6 +145,37 @@ body {
   width: 20px;
   height: 20px;
 }
+.icon-calendar {
+  width: 19px;
+  height: 19px;
+  background-position: 0 -1276px;
+
+  &--white {
+    width: 23px;
+    height: 23px;
+    background-position: -29px -1272px;
+  }
+}
+.icon-loc {
+  width: 16px;
+  height: 23px;
+  background-position: 0 -1305px;
+}
+.icon-user {
+  width: 24px;
+  height: 27px;
+  background-position: 0 -1338px;
+}
+.icon-mobile {
+  width: 21px;
+  height: 31px;
+  background-position: 0 -1375px;
+}
+.icon-safe {
+  width: 22px;
+  height: 27px;
+  background-position: 0 -1416px;
+}
 
 /* 标签 */
 .mod-label {
@@ -845,4 +876,72 @@ body {
 
 .mbui-remind-num {
   background: $primary;
+}
+
+/* 时间步骤条 */
+.mod-time-step {
+  font-size: 12px;
+  color: #878787;
+
+  &__item {
+    position: relative;
+    padding: 0 0 0 15px;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+      width: 7px;
+      height: 7px;
+      background: #fff;
+      border: 2px solid $primary;
+      border-radius: 50%;
+      box-sizing: border-box;
+      content: "";
+      transform: translate(0, -50%);
+    }
+
+    .mtst-line {
+      position: absolute;
+      top: -50%;
+      left: 3px;
+      width: 1px;
+      height: 100%;
+      background: #d2d2d2;
+      content: "";
+    }
+  }
+}
+
+/* 标题 */
+.mod-block-tle {
+  padding: 0 0 0 15px;
+  line-height: 1.2;
+  border-left: 2px solid $primary;
+}
+
+/* 表单 */
+.mod-form {
+  &-item {
+    @extend %flex;
+    @extend %flex-v-c;
+    padding: 13px;
+    background: #f3f3f3;
+    border-radius: 3px;
+
+    &:not(:first-of-type) {
+      margin: 10px 0 0;
+    }
+
+    &__icon {
+      display: block;
+      width: 24px;
+    }
+
+    &__field {
+      @extend %flex1;
+      overflow: hidden;
+    }
+  }
 }

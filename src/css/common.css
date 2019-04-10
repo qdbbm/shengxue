@@ -32,19 +32,19 @@
   z-index: 1;
 }
 
-.mod-search-block.active, .news-item, .mod-tle, .mod-upgrade, .mod-goods-media, .mod-comment-bar {
+.mod-search-block.active, .news-item, .mod-tle, .mod-upgrade, .mod-goods-media, .mod-comment-bar, .mod-form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.news-item__bd, .mod-upgrade-bd, .mod-goods-media__bd, .mod-comment-bar__field {
+.news-item__bd, .mod-upgrade-bd, .mod-goods-media__bd, .mod-comment-bar__field, .mod-form-item__field {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.mod-search-block.active, .mod-upgrade, .mod-comment-bar {
+.mod-search-block.active, .mod-upgrade, .mod-comment-bar, .mod-form-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -218,6 +218,42 @@ body {
   background-position: 0px -1246px;
   width: 20px;
   height: 20px;
+}
+
+.icon-calendar {
+  width: 19px;
+  height: 19px;
+  background-position: 0 -1276px;
+}
+
+.icon-calendar--white {
+  width: 23px;
+  height: 23px;
+  background-position: -29px -1272px;
+}
+
+.icon-loc {
+  width: 16px;
+  height: 23px;
+  background-position: 0 -1305px;
+}
+
+.icon-user {
+  width: 24px;
+  height: 27px;
+  background-position: 0 -1338px;
+}
+
+.icon-mobile {
+  width: 21px;
+  height: 31px;
+  background-position: 0 -1375px;
+}
+
+.icon-safe {
+  width: 22px;
+  height: 27px;
+  background-position: 0 -1416px;
 }
 
 /* 标签 */
@@ -863,4 +899,69 @@ body {
 
 .mbui-remind-num {
   background: #009bf7;
+}
+
+/* 时间步骤条 */
+.mod-time-step {
+  font-size: 12px;
+  color: #878787;
+}
+
+.mod-time-step__item {
+  position: relative;
+  padding: 0 0 0 15px;
+}
+
+.mod-time-step__item:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border: 2px solid #009bf7;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: "";
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.mod-time-step__item .mtst-line {
+  position: absolute;
+  top: -50%;
+  left: 3px;
+  width: 1px;
+  height: 100%;
+  background: #d2d2d2;
+  content: "";
+}
+
+/* 标题 */
+.mod-block-tle {
+  padding: 0 0 0 15px;
+  line-height: 1.2;
+  border-left: 2px solid #009bf7;
+}
+
+/* 表单 */
+.mod-form-item {
+  padding: 13px;
+  background: #f3f3f3;
+  border-radius: 3px;
+}
+
+.mod-form-item:not(:first-of-type) {
+  margin: 10px 0 0;
+}
+
+.mod-form-item__icon {
+  display: block;
+  width: 24px;
+}
+
+.mod-form-item__field {
+  overflow: hidden;
 }

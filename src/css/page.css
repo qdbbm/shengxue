@@ -294,3 +294,132 @@
   margin: 25px 0;
   font-size: 13px;
 }
+
+.pri-bg {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  padding-top: 26%;
+  background: #009bf7;
+}
+
+.vip-card {
+  position: relative;
+  border-radius: 10px;
+  min-height: 160px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right bottom, from(#e3be82), to(#f1d9a4));
+  background: linear-gradient(to right bottom, #e3be82, #f1d9a4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.vip-card:before, .vip-card:after {
+  position: absolute;
+  top: -30px;
+  left: -50px;
+  width: 250px;
+  height: 120px;
+  border-bottom-right-radius: 100%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background: -webkit-gradient(linear, left top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.15)));
+  background: linear-gradient(to right bottom, transparent, rgba(255, 255, 255, 0.15));
+  content: "";
+}
+
+.vip-card:after {
+  top: -10px;
+  left: -10px;
+}
+
+.vip-card-tle {
+  text-shadow: 0 1px 1px rgba(144, 111, 44, 0.75);
+}
+
+.vip-card .mbui-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  line-height: 26px;
+  padding: 0 16px;
+  background: #bf9b52;
+}
+
+.vcard-item {
+  background: -webkit-gradient(linear, left top, right bottom, from(#4697ff), to(#89bbff));
+  background: linear-gradient(to right bottom, #4697ff, #89bbff);
+  border-radius: 10px;
+}
+
+.vcard-item:not(:first-of-type) {
+  margin: 10px 0 0;
+}
+
+.vcard-item-tle {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.vcard-item .mbui-btn {
+  line-height: 26px;
+  padding: 0 16px;
+}
+
+.vcard-item--info {
+  background: -webkit-gradient(linear, left top, right bottom, from(#b4b6c5), to(#c9cedc));
+  background: linear-gradient(to right bottom, #b4b6c5, #c9cedc);
+}
+
+.vcard-item--info .mbui-btn {
+  background: #828699;
+}
+
+.vcard-item--vip {
+  background: -webkit-gradient(linear, left top, right bottom, from(#e3bd82), to(#f1d8a5));
+  background: linear-gradient(to right bottom, #e3bd82, #f1d8a5);
+}
+
+.vcard-item--vip .mbui-btn {
+  background: #bf9b52;
+}
+
+.huodong-list .mbui-media-item:not(:first-of-type) {
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+}
+
+.huodong-list .mbui-media-item__img {
+  width: 124px;
+  height: 93px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.huodong-item-price {
+  color: #ff3535;
+}
+
+.huodong-info {
+  position: relative;
+  z-index: 1;
+  margin: -30px 0 0;
+}
+
+.huodong-info-ads {
+  color: #878787;
+  border-top: 1px dotted #c4c4c4;
+}
+
+.huodong-detail-con {
+  padding: 0 15px;
+}
+
+.huodong-detail-con p {
+  font-size: 12px;
+  color: #696969;
+}
+
+.huodong-detail-con p + p {
+  margin: 15px 0 0;
+}
