@@ -830,6 +830,15 @@ body {
   }
 }
 
+.mbui-btn-primary--gd {
+  background: linear-gradient(#1e9ee9, #018ee0);
+}
+
+.mbui-btn-primary--sd {
+  box-shadow: 0 1px 9px rgba(29, 149, 221, .5);
+}
+
+/* 媒体对象 */
 .mbui-media-item {
   &__img {
     width: 50px;
@@ -944,4 +953,9 @@ body {
       overflow: hidden;
     }
   }
+}
+
+.disabled {
+  opacity: .4 !important;
+  pointer-events: none;
 }
