@@ -11,6 +11,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <title>直播主页</title>
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
   <link rel="stylesheet" href="css/mbui.min.css">
   <!-- build:css css/site.min.css -->
   <link rel="stylesheet" href="css/common.css">
@@ -28,15 +29,142 @@
   <!-- 头部 -->
 
   <main id="pages" class="mbui-page-wrap">
-    <div class="mbui-page">
-      
+    <div class="mbui-page mbui-page--has-send">
+      <div class="mbui-pd-10 mbui-pb-0 mbui-bg-white">
+        <div class="mod-video-wrap">
+          <video class="mod-video" src="http://img.ksbbs.com/asset/Mon_1703/eb048d7839442d0.mp4" controls="controls">
+            您的浏览器不支持 video 标签。
+          </video>
+        </div>
+      </div>
+      <!-- end 视频 -->
+
+      <div class="mbui-swiper-tab-wrap mbui-mb-30">
+        <div class="swiper-container mbui-swiper-tab-tle mbui-swiper-tab-tle--center" id="mbui-swiper-tab-tle">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide active">
+              <span>聊天</span>
+            </li>
+            <li class="swiper-slide">
+              <span>主播<span>
+            </li>
+          </ul>
+        </div>
+        <!-- end .mbui-swiper-tab-tle -->
+
+        <div class="swiper-container mbui-swiper-tab-container" id="mbui-swiper-tab-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="mod-user-media mbui-flex-v-c mbui-bg-white mbui-pd-10">
+                <div class="mod-user-media__side">
+                  <img class="mums-img" src="images/user.jpg" alt="">
+                </div>
+                <div class="mod-user-media__main">
+                  <h4 class="mumm-name">
+                    <span class="mumm-name-inner">陈亮ck-chen</span>
+                  </h4>
+                  <p class="mbui-fs-12 mbui-toe">
+                    <a class="mbui-color-primary mbui-fr mbui-ml-5">更多</a>原名梁淇赟，90后钢琴第一网红
+                  </p>
+                </div>
+                <a class="active mbui-ml-20" href="#"><i class="icon icon-home"></i></a>
+                <a class="mbui-btn mbui-btn-outline-primary mbui-btn-sm mbui-btn-round mbui-ml-10" href="#">
+                  <i class="icon icon-plus-sm"></i>
+                  <span class="vam">关注</span>
+                </a>
+              </div>
+
+              <ul class="mod-chat-list mbui-bt">
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">花草树木：</span>学到很多东西
+                </li>
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">天风：</span>我天天多来看老师的表演，一天不落下
+                </li>
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">花草树木：</span>学到很多东西
+                </li>
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">天风：</span>我天天多来看老师的表演，一天不落下
+                </li>
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">花草树木：</span>学到很多东西
+                </li>
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">天风：</span>我天天多来看老师的表演，一天不落下
+                </li>
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">花草树木：</span>学到很多东西
+                </li>
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">天风：</span>我天天多来看老师的表演，一天不落下
+                </li>
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">花草树木：</span>学到很多东西
+                </li>
+                <li class="mod-chat-item">
+                  <span class="mod-chat-item__nick">天风：</span>我天天多来看老师的表演，一天不落下
+                </li>
+              </ul>
+            </div>
+            <!-- end 聊天 -->
+
+            <div class="swiper-slide">
+              <div class="mod-user-media mbui-flex-v-c mbui-bg-white mbui-pd-10">
+                <div class="mod-user-media__side">
+                  <img class="mums-img" src="images/user.jpg" alt="">
+                </div>
+                <div class="mod-user-media__main">
+                  <h4 class="mumm-name">
+                    <span class="mumm-name-inner">陈亮ck-chen</span>
+                  </h4>
+                </div>
+                <a class="mbui-btn mbui-btn-primary mbui-btn-round mbui-btn-sm" href="#">已关注</a>
+              </div>
+
+              <div class="mbui-ptb-15 mbui-plr-10 mbui-btb mbui-bg-white">
+                <div>
+                  <h3 class="mod-block-tle mbui-fs-15">主播公告</h3>
+                  <p class="mbui-fs-12 mbui-mt-15">
+                    直播时间：16:00-23:00
+                  </p>
+                </div>
+
+                <div class="mbui-mt-30">
+                  <h3 class="mod-block-tle mbui-fs-15">主播简介</h3>
+                  <p class="mbui-fs-12 mbui-mt-15">
+                    文武贝，原名梁淇赟，90后钢琴第一网红，拥有百万粉丝的独立音
+                    乐人。擅长独立创作乐曲、即兴演奏，至今已经出版乐谱教学类书
+                    籍20余本，在《琴童》杂志上发表过多篇音乐科普文章。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- end 主播 -->
+          </div>
+        </div>
+        <!-- end .swiper-tab-container -->
+      </div>
+      <!-- end .mbui-swiper-tab-wrap -->
     </div>
     <!-- end .page -->
   </main>
   <!-- end .page-wrap -->
+
+  <div class="mod-send">
+    <div class="mod-send-field">
+      <input class="mbui-input mbui-full-width" type="text" placeholder="点击输入内容">
+    </div>
+    <a class="mbui-btn mbui-btn-primary mbui-btn-round mbui-btn-sm mbui-ml-5" href="#">发送</a>
+  </div>
   <script src="js/lib/jquery-2.2.3.min.js"></script>
   <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
+  <script src="js/plugins/swiper.min.js"></script>
   <script src="js/mbui.min.js"></script>
+  <script>
+    // swiper tab 初始化
+    swiper.initSwiperTab('auto', $('#mbui-swiper-tab-tle'), $('#mbui-swiper-tab-container'));
+  </script>
 </body>
 
 </html>
