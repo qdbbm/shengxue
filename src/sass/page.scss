@@ -491,3 +491,67 @@ $colorBorder: #e5e5e5;
     vertical-align: middle;
   }
 }
+
+.zhibo-item {
+  position: relative;
+  padding: 12px;
+  background: #fff;
+
+  &:not(:first-of-type) {
+    margin: 10px 0 0;
+  }
+
+  &-img {
+    position: relative;
+    padding-top: 50%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &-tle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+  }
+
+  &-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 5px 0 16px;
+    background: $primary;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 20px;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      content: "";
+      transform: translate(0, -50%);
+    }
+  }
+
+  .icon-play2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+}
