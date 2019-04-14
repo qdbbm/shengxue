@@ -29,7 +29,7 @@
 
   <main id="pages" class="mbui-page-wrap">
     <div class="mbui-page">
-      <div class="mbui-form">
+      <div class="mbui-form mbui-form--no-label">
         <div class="mbui-form-item mbui-form-item--lg">
           <label class="item-label">
             头像
@@ -59,6 +59,44 @@
             <input class="mbui-text mbui-tar" type="number" value="15904601770">
           </div>
         </div>
+      </div>
+
+      <div class="mbui-pd-10 mbui-bg-white mbui-mt-10">
+        <h3>个人简介</h3>
+        <div class="mbui-mt-5">
+          <textarea class="mbui-textarea mbui-pd-0">原名梁淇赟，90后钢琴第一网红拥有百万粉丝的音乐人</textarea>
+        </div>
+      </div>
+
+      <div class="mbui-pd-10 mbui-bg-white mbui-mt-10">
+        <h3>我的证件</h3>
+        <ul class="mbui-uploader mbui-uploader--style-2 mbui-clearfix mbui-pd-0 mbui-mt-5" id="uploaderFiles">
+          <li class="mbui-uploader__item">
+            <a class="mbui-uploader__item-img" style="background-image: url(images/zj-img.jpg)" data-fancybox="gallery"
+              href="images/zj-img.jpg">
+            </a>
+            <span class="mbui-uploader__item-del">&times;</span>
+          </li>
+          <li class="mbui-uploader__item">
+            <a class="mbui-uploader__item-img" style="background-image: url(images/zj-img.jpg)" data-fancybox="gallery"
+              href="images/zj-img.jpg">
+            </a>
+            <span class="mbui-uploader__item-del">&times;</span>
+          </li>
+          <li class="mbui-uploader__field">
+            <input class="mbui-uploader__input" id="uploaderInput" type="file" accept="image/*" multiple>
+            <div class="mbui-uploader__field-inner">
+              <svg class="mbui-icon" aria-hidden="true">
+                <use xlink:href="#icon-increase"></use>
+              </svg>
+              <p class="mbui-fs-12 mbui-mt-10">上传图片</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mbui-ptb-15 mbui-plr-50">
+        <a class="mbui-btn mbui-btn-block mbui-btn-primary mbui-btn-round" href="#">保存</a>
       </div>
     </div>
     <!-- end .page -->

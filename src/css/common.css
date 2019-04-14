@@ -832,7 +832,8 @@ body {
 }
 
 /* 上传 */
-.mbui-uploader__field, .mbui-uploader__item {
+.mbui-uploader__field,
+.mbui-uploader__item {
   width: calc(33.333333% - 10px);
   padding: calc(33.333333% - 10px) 0 0;
 }
@@ -842,6 +843,24 @@ body {
   border-radius: 5px;
   background: none;
   padding: calc(33.333333% - 12px) 0 0;
+}
+
+.mbui-uploader--style-2 .mbui-uploader__field {
+  border-color: #009bf7;
+  border-radius: 0;
+}
+
+.mbui-uploader--style-2 .mbui-uploader__item {
+  background: none;
+  border: 1px solid #e5e5e5;
+}
+
+.mbui-uploader--style-2 .mbui-uploader__field-inner {
+  color: #009bf7;
+}
+
+.mbui-uploader--style-2 .mbui-uploader__item-img {
+  background-size: contain;
 }
 
 /* 商品媒体对象 */
@@ -1008,7 +1027,7 @@ body {
 }
 
 .disabled {
-  opacity: .4 !important;
+  opacity: 0.4 !important;
   pointer-events: none;
 }
 
@@ -1082,4 +1101,8 @@ body {
 
 .mbui-page--has-send {
   padding-bottom: 49px;
+}
+
+.mbui-textarea {
+  border: 0;
 }
