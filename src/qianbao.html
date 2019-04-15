@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name=" renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>我的钱包</title>
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <link rel="stylesheet" href="css/mbui.min.css">
+  <!-- build:css css/site.min.css -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/page.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <header class="mbui-header mbui-header--transparent mbui-header--no-fixed">
+    <div class="mbui-header-left" onclick="javascript:history.back();">
+      <i class="mbui-icon-v-left mbui-header-icon"></i>
+    </div>
+    <h1 class="page-tt">我的钱包</h1>
+    <div class="mbui-header-right">
+      <span class="mbui-header-icon">
+        <i class="icon icon-share"></i>
+      </span>
+    </div>
+  </header>
+  <!-- 头部 -->
+
+  <main id="pages" class="mbui-page-wrap">
+    <div class="mbui-page">
+      <div class="mod-wrap mod-wrap--style-2 mbui-mb-20">
+        <div class="mod-wrap__bg"></div>
+        <div class="mbui-tac">
+          <div class="mod-user-total">
+            <p class="mod-user-total__num">￥100.00</p>
+            <p class="mod-user-total__txt">我的余额</p>
+          </div>
+          <div class="mbui-tac">
+            <a class="mbui-dib mbui-pt-10 mbui-color-white" href="javascript:common.openDialog('dialog-tx');">我要提现
+              &gt;</a>
+          </div>
+        </div>
+
+        <div class="mod-wrap__inner mbui-mt-15 mbui-plr-15 mbui-pb-30">
+          <div class="mbui-swiper-tab-wrap">
+            <div class="swiper-container mbui-swiper-tab-tle mbui-swiper-tab-tle--center mbui-swiper-tab-tle--no-bd" id="mbui-swiper-tab-tle">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide active">
+                  <span>提现记录</span>
+                </li>
+                <li class="swiper-slide">
+                  <span>交易记录</span>
+                </li>
+              </ul>
+            </div>
+            <!-- end 标题 -->
+
+            <div class="swiper-container mbui-mt-20" id="mbui-swiper-tab-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <table class="mod-table">
+                    <thead>
+                      <tr>
+                        <td width="15%">头像</td>
+                        <td>昵称</td>
+                        <td>邀请时间</td>
+                        <td>总返现(元)</td>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img class="mt-user-img" src="images/user.jpg" alt="">
+                        </td>
+                        <td class="mbui-toe">小仙女哦</td>
+                        <td class="mbui-toe">2019-03-30</td>
+                        <td class="mbui-color-second">+￥128.88</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="mt-user-img" src="images/user.jpg" alt="">
+                        </td>
+                        <td class="mbui-toe">小仙女哦</td>
+                        <td class="mbui-toe">2019-03-30</td>
+                        <td class="mbui-color-second">+￥128.88</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="mt-user-img" src="images/user.jpg" alt="">
+                        </td>
+                        <td class="mbui-toe">小仙女哦</td>
+                        <td class="mbui-toe">2019-03-30</td>
+                        <td class="mbui-color-second">+￥128.88</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="mt-user-img" src="images/user.jpg" alt="">
+                        </td>
+                        <td class="mbui-toe">小仙女哦</td>
+                        <td class="mbui-toe">2019-03-30</td>
+                        <td class="mbui-color-second">+￥128.88</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="mt-user-img" src="images/user.jpg" alt="">
+                        </td>
+                        <td class="mbui-toe">小仙女哦</td>
+                        <td class="mbui-toe">2019-03-30</td>
+                        <td class="mbui-color-second">+￥128.88</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img class="mt-user-img" src="images/user.jpg" alt="">
+                        </td>
+                        <td class="mbui-toe">小仙女哦</td>
+                        <td class="mbui-toe">2019-03-30</td>
+                        <td class="mbui-color-second">+￥128.88</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- end 提现记录 -->
+
+                <div class="swiper-slide">
+                  <div class="mod-empty">
+                    暂无相关数据！
+                  </div>
+                </div>
+                <!-- end 交易记录 -->
+              </div>
+            </div>
+            <!-- end 内容 -->
+          </div>
+          <!-- end tab -->
+        </div>
+      </div>
+    </div>
+    <!-- end .page -->
+  </main>
+  <!-- end .page-wrap -->
+
+  <div class="mbui-dialog-wrap" id="dialog-tx">
+    <div class="mbui-overlay"></div>
+    <div class="mbui-dialog mbui-bg-white">
+      <div class="mbui-dialog-bd mbui-plr-20">
+        <div class="mbui-flex mbui-ptb-5 mbui-bb">
+          <span class="mbui-fs-30 mbui-mr-10">￥</span>
+          <input class="mbui-input mbui-flex1 mbui-fs-16" type="number" placeholder="请输入提现金额">
+        </div>
+        <div class="mbui-flex mbui-ptb-15 mbui-bb">
+          <input class="mbui-input mbui-flex1 mbui-fs-16" type="text" placeholder="请输入支付宝账号">
+        </div>
+        <div class="mbui-mt-10 mbui-tal mbui-fs-12 mbui-color-gray">
+          <p>最高提现金额￥9998元，最低提现金额￥100</p>
+          <p>提现手续费为2%</p>
+        </div>
+      </div>
+      <div class="mbui-dialog-ft mbui-mt-10">
+        <a class="mbui-btn mbui-btn-primary mbui-btn-block mbui-btn-no-radius" href="#">提现</a>
+        <a class="mbui-btn mbui-btn-block mbui-btn-no-radius" href="javascript:common.closeDialog('dialog-tx');">取消</a>
+      </div>
+    </div>
+  </div>
+  <!-- end 提现弹窗 -->
+
+  <script src="js/lib/jquery-2.2.3.min.js"></script>
+  <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
+  <script src="js/plugins/swiper.min.js"></script>
+  <script src="js/mbui.min.js"></script>
+  <script>
+    // swiper tab 初始化
+    swiper.initSwiperTab(2, $('#mbui-swiper-tab-tle'), $('#mbui-swiper-tab-container'));
+  </script>
+</body>
+
+</html>

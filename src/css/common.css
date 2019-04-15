@@ -357,6 +357,10 @@ body {
   margin-right: 30px;
 }
 
+.mbui-swiper-tab-tle--no-bd:after {
+  content: none;
+}
+
 .mbui-swiper-tab-tle--center .swiper-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1045,10 +1049,11 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .mod-chat-list {
-  max-height: 228px;
   padding: 10px;
   overflow: hidden;
   overflow-y: auto;
@@ -1105,4 +1110,118 @@ body {
 
 .mbui-textarea {
   border: 0;
+}
+
+/* 容器 */
+.mod-wrap {
+  position: relative;
+  padding: 0 10px 7px;
+  overflow: hidden;
+}
+
+.mod-wrap__inner {
+  padding: 15px 0 30px;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.04);
+}
+
+.mod-wrap__bg {
+  position: fixed;
+  top: 44px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 50px;
+  background: #008bde;
+}
+
+.mod-wrap__bg:after {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 120%;
+  height: 60px;
+  background: #008bde;
+  border-radius: 50%;
+  content: "";
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.mod-wrap--style-2 {
+  padding-top: 59px;
+  margin: -44px 0 0;
+}
+
+.mod-wrap--style-2 .mod-wrap__bg {
+  top: 0;
+  height: 200px;
+  background: url("../images/bg7.png") no-repeat center bottom #008bde;
+  background-size: cover;
+}
+
+.mod-wrap--style-2 .mod-wrap__bg:after {
+  background: #008bde;
+}
+
+/* 统计 */
+.mod-user-total {
+  padding: 10px 0;
+  width: 220px;
+  margin: 0 auto;
+  color: #fff;
+  background: #008bde;
+  border: 1px solid #12a7ff;
+  border-radius: 50px;
+}
+
+.mod-user-total__num {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.mod-user-total__txt {
+  font-size: 12px;
+}
+
+/* 表格 */
+.mod-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.mod-table thead {
+  border-bottom: 1px solid #d6dcda;
+}
+
+.mod-table thead td:last-of-type {
+  text-align: right;
+}
+
+.mod-table td {
+  padding: 8px 0;
+}
+
+.mod-table tbody {
+  color: #4f5058;
+}
+
+.mod-table tbody tr {
+  border-bottom: 1px dashed #d6dcda;
+}
+
+.mod-table tbody td {
+  padding: 10px 0;
+}
+
+.mod-table tbody td:last-of-type {
+  text-align: right;
+}
+
+.mod-table .mt-user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }

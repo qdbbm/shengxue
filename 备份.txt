@@ -1,0 +1,5 @@
+$(function () {
+      var _chatListHeight = $(window).height() - $('.header').outerHeight() - $('.mod-video-wrap').outerHeight() - $('.mbui-swiper-tab-tle').outerHeight() - $('.mod-user-media').outerHeight() - 10;
+      $('.mod-chat-list').css('height', _chatListHeight);
+      console.log(_chatListHeight);
+    })
