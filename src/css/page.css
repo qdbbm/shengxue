@@ -559,3 +559,17 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+.jiangshi {
+  position: relative;
+  padding-top: 26%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.jiangshi__inner {
+  position: absolute;
+  top: 23%;
+  left: 8%;
+  color: #fff;
+}

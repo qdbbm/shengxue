@@ -555,3 +555,17 @@ $colorBorder: #e5e5e5;
     transform: translate(-50%, -50%);
   }
 }
+
+.jiangshi {
+  position: relative;
+  padding-top: 26%;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__inner {
+    position: absolute;
+    top: 23%;
+    left: 8%;
+    color: #fff;
+  }
+}

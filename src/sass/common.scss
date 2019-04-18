@@ -1201,3 +1201,21 @@ body {
     border-radius: 50%;
   }
 }
+
+.circle-arrow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  vertical-align: middle;
+
+  .mbui-icon {
+    font-size: 12px;
+    width: 1em;
+    height: 1em;
+    color: #282a52;
+  }
+}
