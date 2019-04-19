@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.news-item__bd-tle, .news-item__bd-txt, .news-item__bd-date, .mod-user-media__main .mumm-name-inner {
+.news-item__bd-tle, .news-item__bd-txt, .news-item__bd-date, .mod-user-media__main .mumm-name-inner, .mod-coupon__item__main .mcim__type__inner, .mod-coupon__item__main .mcim__bd__name, .mod-coupon__item__main .mcim__bd__date, .mod-coupon__item__side .mcis__txt, .mod-coupon__item__side .mcis__btn {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1242,4 +1242,187 @@ body {
   width: 1em;
   height: 1em;
   color: #282a52;
+}
+
+/* 优惠券 */
+.mod-coupon {
+  padding: 10px;
+}
+
+.mod-coupon__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.mod-coupon__item:not(:first-of-type) {
+  margin: 15px 0 0;
+}
+
+.mod-coupon__item__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 7px;
+  overflow: hidden;
+}
+
+.mod-coupon__item__main .mcim__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75px;
+  height: 75px;
+  padding: 0 5px;
+  margin: 0 10px 0 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mod-coupon__item__main .mcim__type__inner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 6px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.mod-coupon__item__main .mcim__type__inner:before, .mod-coupon__item__main .mcim__type__inner:after {
+  position: absolute;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  content: "";
+}
+
+.mod-coupon__item__main .mcim__type__inner:before {
+  left: -4px;
+}
+
+.mod-coupon__item__main .mcim__type__inner:after {
+  right: -4px;
+}
+
+.mod-coupon__item__main .mcim__bd {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.mod-coupon__item__main .mcim__bd__price {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  color: #ff5d16;
+}
+
+.mod-coupon__item__main .mcim__bd__price__num {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.mod-coupon__item__main .mcim__bd__name {
+  display: inline-block;
+  max-width: 3em;
+  margin: 0 0 0 10px;
+  vertical-align: middle;
+}
+
+.mod-coupon__item__main .mcim__bd__date {
+  font-size: 10px;
+  color: #999;
+}
+
+.mod-coupon__item__main .mcim__bd__txt {
+  margin: 5px 0 0;
+  font-size: 12px;
+}
+
+.mod-coupon__item__side {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 87px;
+  text-align: center;
+  border-left: 1px dashed #e2e2e2;
+}
+
+.mod-coupon__item__side:before, .mod-coupon__item__side:after {
+  position: absolute;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background: #f6f6f6;
+  border-radius: 50%;
+  content: "";
+}
+
+.mod-coupon__item__side::before {
+  top: -5px;
+}
+
+.mod-coupon__item__side:after {
+  bottom: -5px;
+}
+
+.mod-coupon__item__side .mcis__txt {
+  font-size: 13px;
+}
+
+.mod-coupon__item__side .mcis__btn {
+  display: inline-block;
+  width: 70px;
+  height: 26px;
+  margin: 5px 0 0;
+  line-height: 26px;
+  font-size: 12px;
+  color: #fff;
+  background: #ff5d16;
+  border-radius: 20px;
+}
+
+.mod-coupon__item--djq .mod-coupon__item__main .mcim__type__inner {
+  background: -webkit-gradient(linear, left top, right top, from(#f1d1a3), to(#cba164));
+  background: linear-gradient(to right, #f1d1a3, #cba164);
+}
+
+.mod-coupon__item--zkq .mod-coupon__item__main .mcim__type__inner {
+  background: -webkit-gradient(linear, left top, right top, from(#b9b0a3), to(#a29684));
+  background: linear-gradient(to right, #b9b0a3, #a29684);
+}
+
+.mod-coupon__item--disabled .mod-coupon__item__side .mcis__btn {
+  background: #bfbfbf;
+  pointer-events: none;
+}
+
+@media (min-width: 375px) {
+  .mod-coupon__item__main {
+    padding: 12px;
+  }
 }

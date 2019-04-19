@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 gulp.task('sass-dev', function () {
   return gulp.src(config.src)               // sass 源文件
-      .pipe(changed(config.dev))
+      .pipe(changed(config.dev, { extension: '.css' }))
       /*
        * 嵌套输出方式 nested
        * 展开输出方式 expanded 

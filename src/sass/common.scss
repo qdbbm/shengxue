@@ -1219,3 +1219,181 @@ body {
     color: #282a52;
   }
 }
+
+/* 优惠券 */
+.mod-coupon {
+  padding: 10px;
+
+  &__item {
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .06);
+
+    &:not(:first-of-type) {
+      margin: 15px 0 0;
+    }
+
+    &__main {
+      display: flex;
+      flex: 1;
+      padding: 7px;
+      overflow: hidden;
+
+      .mcim__type {
+        display: flex;
+        align-items: center;
+        width: 75px;
+        height: 75px;
+        padding: 0 5px;
+        margin: 0 10px 0 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        &__inner {
+          position: relative;
+          display: block;
+          margin: 0 auto;
+          padding: 10px 6px;
+          font-size: 15px;
+          color: #fff;
+          border-radius: 3px;
+          @extend %ellipsis;
+
+          &:before,
+          &:after {
+            position: absolute;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 50%;
+            transform: translate(0, -50%);
+            content: "";
+          }
+
+          &:before {
+            left: -4px;
+          }
+
+          &:after {
+            right: -4px;
+          }
+        }
+      }
+
+      .mcim__bd {
+        flex: 1;
+        overflow: hidden;
+
+        &__price {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 13px;
+          color: #ff5d16;
+
+          &__num {
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 1.3;
+          }
+        }
+
+        &__name {
+          display: inline-block;
+          max-width: 3em;
+          margin: 0 0 0 10px;
+          vertical-align: middle;
+          @extend %ellipsis;
+        }
+
+        &__date {
+          font-size: 10px;
+          color: #999;
+          @extend %ellipsis;
+        }
+
+        &__txt {
+          margin: 5px 0 0;
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__side {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 87px;
+      text-align: center;
+      border-left: 1px dashed #e2e2e2;
+
+      &:before,
+      &:after {
+        position: absolute;
+        left: -5px;
+        width: 10px;
+        height: 10px;
+        background: #f6f6f6;
+        border-radius: 50%;
+        content: "";
+      }
+
+      &::before {
+        top: -5px;
+      }
+
+      &:after {
+        bottom: -5px;
+      }
+
+      .mcis__txt {
+        font-size: 13px;
+        @extend %ellipsis;
+      }
+
+      .mcis__btn {
+        display: inline-block;
+        width: 70px;
+        height: 26px;
+        margin: 5px 0 0;
+        line-height: 26px;
+        font-size: 12px;
+        color: #fff;
+        background: #ff5d16;
+        border-radius: 20px;
+        @extend %ellipsis;
+      }
+    }
+
+    &--djq {
+      .mod-coupon__item__main .mcim__type__inner {
+        background: linear-gradient(to right, #f1d1a3, #cba164);
+      }
+    }
+
+    &--zkq {
+      .mod-coupon__item__main .mcim__type__inner {
+        background: linear-gradient(to right, #b9b0a3, #a29684);
+      }
+    }
+
+    &--disabled {
+      .mod-coupon__item__side .mcis__btn {
+        background: #bfbfbf;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .mod-coupon {
+    &__item {
+      &__main {
+        padding: 12px;
+      }
+    }
+  }
+}
