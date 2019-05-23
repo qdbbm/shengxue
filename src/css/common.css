@@ -275,6 +275,23 @@ body {
   background-position: 0 -1416px;
 }
 
+.icon-live {
+  display: inline-block;
+  width: 58px;
+  height: 55px;
+  background: url("../images/icon-live.png") no-repeat;
+  background-size: 58px auto;
+  vertical-align: middle;
+}
+
+.mbui-nav-item .icon-live {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 /* 标签 */
 .mod-label {
   position: relative;
@@ -1425,4 +1442,8 @@ body {
   .mod-coupon__item__main {
     padding: 12px;
   }
+}
+
+.mbui-remind-num {
+  padding: 0 5px;
 }

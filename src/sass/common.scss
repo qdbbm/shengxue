@@ -193,6 +193,21 @@ body {
   height: 27px;
   background-position: 0 -1416px;
 }
+.icon-live {
+  display: inline-block;
+  width: 58px;
+  height: 55px;
+  background: url("../images/icon-live.png") no-repeat;
+  background-size: 58px auto;
+  vertical-align: middle;
+
+  .mbui-nav-item & {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
 
 /* 标签 */
 .mod-label {
@@ -1396,4 +1411,8 @@ body {
       }
     }
   }
+}
+
+.mbui-remind-num {
+  padding: 0 5px;
 }
