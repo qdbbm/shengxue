@@ -1,4 +1,4 @@
-.mall-item-bd__tle {
+.mall-item-bd__tle, .quan__item__tle, .quan__item__txt {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -496,6 +496,7 @@
 
 .zhibo-item {
   position: relative;
+  display: block;
   padding: 12px;
   background: #fff;
 }
@@ -551,6 +552,47 @@
           transform: translate(0, -50%);
 }
 
+.zhibo-item--yg {
+  padding: 0;
+}
+
+.zhibo-item--yg .zhibo-item-tag {
+  left: auto;
+  top: 10px;
+  right: 10px;
+}
+
+.zhibo-item--yg .zhibo-item-tle {
+  bottom: 45px;
+  color: #fff;
+  background: none;
+}
+
+.zhibo-item--yg .mod-user-media {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.zhibo-item--yg .mod-user-media__main .mumm-name {
+  line-height: 1.2em;
+}
+
+.zhibo-item--yg .mod-user-media__main .mumm-name-inner {
+  font-size: 12px;
+}
+
+.zhibo-item--yg .mod-user-media__main .mumm-txt {
+  margin: 0;
+  color: #fff;
+}
+
 .zhibo-item .icon-play2 {
   position: absolute;
   top: 50%;
@@ -572,4 +614,126 @@
   top: 23%;
   left: 8%;
   color: #fff;
+}
+
+.nav-menu {
+  margin: 0 0 -15px 0;
+}
+
+.nav-menu__item {
+  margin: 0 0 15px 0;
+}
+
+.quan__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right top, from(#35bbff), to(#009bf7));
+  background: linear-gradient(to right, #35bbff, #009bf7);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.quan__item:after {
+  position: absolute;
+  top: 5px;
+  right: -4px;
+  width: 8px;
+  bottom: 5px;
+  background: url("../images/icon-dot.png") repeat-y;
+  content: "";
+}
+
+.quan__item:not(:first-of-type) {
+  margin: 20px 0 0;
+}
+
+.quan__item__field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+}
+
+.quan__item__field:after {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 1px;
+  bottom: 10px;
+  background: #56c0ff;
+  content: "";
+}
+
+.quan__item__side {
+  position: relative;
+  width: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.quan__item__side:before, .quan__item__side:after {
+  position: absolute;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fafafa;
+  content: "";
+}
+
+.quan__item__side:before {
+  top: -5px;
+}
+
+.quan__item__side:after {
+  bottom: -5px;
+}
+
+.quan__item__side .mbui-btn {
+  color: #009bf7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfeff), to(#c6ebff));
+  background: linear-gradient(#fcfeff, #c6ebff);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 134, 213, 0.75);
+          box-shadow: 0 1px 3px rgba(0, 134, 213, 0.75);
+}
+
+.quan__item__tle {
+  font-size: 22px;
+  line-height: 1.5em;
+  font-weight: 700;
+  max-width: 8em;
+}
+
+.quan__item__txt {
+  display: inline-block;
+  width: 156px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 5px;
+  margin: 5px 0 0;
+  font-size: 12px;
+  background: #66cafe;
 }

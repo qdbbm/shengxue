@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.news-item__bd-tle, .news-item__bd-txt, .news-item__bd-date, .mod-user-media__main .mumm-name-inner, .mod-coupon__item__main .mcim__type__inner, .mod-coupon__item__main .mcim__bd__name, .mod-coupon__item__main .mcim__bd__date, .mod-coupon__item__side .mcis__txt, .mod-coupon__item__side .mcis__btn {
+.news-item__bd-tle, .news-item__bd-date, .mod-user-media__main .mumm-name-inner, .mod-coupon__item__main .mcim__type__inner, .mod-coupon__item__main .mcim__bd__name, .mod-coupon__item__main .mcim__bd__date, .mod-coupon__item__side .mcis__txt, .mod-coupon__item__side .mcis__btn {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -57,7 +57,7 @@
 }
 
 body {
-  background: #f6f9fa;
+  background: #fafafa;
 }
 
 /* 小图标 */
@@ -292,6 +292,47 @@ body {
           transform: translate(-50%, 0);
 }
 
+.icon-nav {
+  display: inline-block;
+  width: 105px;
+  height: 106px;
+  background: url("../images/icon-sprites-3.png") no-repeat top left;
+  vertical-align: middle;
+  zoom: .5;
+}
+
+.icon-xwdt {
+  background-position: 0px 0px;
+}
+
+.icon-zbkc {
+  background-position: 0px -116px;
+}
+
+.icon-spkc {
+  background-position: 0px -232px;
+}
+
+.icon-rjxz {
+  background-position: 0px -348px;
+}
+
+.icon-sc {
+  background-position: 0px -464px;
+}
+
+.icon-wzfx {
+  background-position: 0px -580px;
+}
+
+.icon-zjwd {
+  background-position: 0px -696px;
+}
+
+.icon-lxwm {
+  background-position: 0px -812px;
+}
+
 /* 标签 */
 .mod-label {
   position: relative;
@@ -469,9 +510,18 @@ body {
 }
 
 .news-item__bd-txt, .news-item__bd-date {
-  margin: 4px 0 0;
   font-size: 12px;
   color: #8e8e8e;
+}
+
+.news-item__bd-date {
+  margin: 4px 0 0;
+}
+
+.news-item__bd-txt {
+  line-height: 1.5em;
+  max-height: 3em;
+  overflow: hidden;
 }
 
 .news-list--lg .news-item__img {
@@ -502,6 +552,15 @@ body {
 .mod-user-media--lg .mod-user-media__side .mums-img {
   width: 50px;
   height: 50px;
+}
+
+.mod-user-media--sm .mod-user-media__side {
+  width: 35px;
+}
+
+.mod-user-media--sm .mod-user-media__side .mums-img {
+  width: 35px;
+  height: 35px;
 }
 
 .mod-user-media__side {
