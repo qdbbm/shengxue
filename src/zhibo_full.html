@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name=" renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>直播</title>
+  <link rel="stylesheet" href="css//plugins/swiper.min.css">
+  <link rel="stylesheet" href="css/mbui.min.css">
+  <!-- build:css css/site.min.css -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/page.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!-- 暂未开播 -->
+  <div class="zb-container mbui-hide">
+    <div class="zb-bg mbui-bg-cover" style="background-image: url(images/zb-bg.jpg);"></div>
+    <div class="zb-mask">
+      <div class="zb-status mbui-tac">
+        <i class="icon-cry"></i>
+        <p class="mbui-color-white mbui-fs-18 mbui-mt-30">暂未开播</p>
+      </div>
+      <!-- end 直播状态 -->
+
+      <div class="mbui-plr-40 mbui-mt-30">
+        <div class="mbui-swiper-notice-wrap">
+          <div class="mbui-swiper-notice__side">
+            <svg class="mbui-icon mbui-swiper-notice__icon mbui-color-primary" aria-hidden="true">
+              <use xlink:href="#icon-shengyin"></use>
+            </svg>
+          </div>
+          <div class="mbui-swiper-notice__main">
+            <div class="swiper-container" data-swiper-notice>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a class="mbui-swiper-notice__link" href="http://www.baidu.com">公告标题公告标题公告标题公告标题</a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="mbui-swiper-notice__link" href="http://www.baidu.com">公告标题公告标题公告标题公告标题</a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="mbui-swiper-notice__link" href="http://www.baidu.com">公告标题公告标题公告标题公告标题</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end 直播公告 -->
+
+      <div class="mbui-mt-30 mbui-tac">
+        <p class="mbui-color-white">开播倒计时</p>
+        <div id="countdown" class="mbui-fs-24"></div>
+        <a class="mbui-btn mbui-btn-outline-white mbui-btn-round mbui-mt-50 mbui-plr-30 mbui-btn-sm"
+          href="zhibo2.html">返回</a>
+      </div>
+      <!-- end 直播倒计时 -->
+    </div>
+  </div>
+  <!-- end 暂未开播 -->
+
+  <!-- 视频容器 -->
+  <div class="video-container" id="video-container">
+    <!-- 视频封面、播放按钮 -->
+    <div class="video-poster mbui-bg-cover" style="background-image: url(images/zb-bg.jpg);">
+      <span class="video-btn js-play">
+        <i class="icon-play3"></i>
+      </span>
+    </div>
+    <div class="mbui-media-item mbui-media-item--round mbui-pd-10 mbui-flex-v-c">
+      <img class="mbui-media-item__img" src="images/user.jpg" alt="">
+      <div class="mbui-media-item__bd">
+        <h4 class="mbui-media-item__tle mbui-color-white">
+          大宝哥的账号
+          <a class="mbui-btn mbui-btn-success mbui-btn-round mbui-btn-xs mbui-ml-10" href="#">
+            + 关注
+          </a>
+        </h4>
+        <p class="mbui-media-item__txt mbui-color-white"><span class="mbui-color-primary">68899</span>人在线</p>
+      </div>
+      <a class="js-user-close" href="javascript:;">
+        <svg class="mbui-icon mbui-fs-12 mbui-color-white" aria-hidden="true">
+          <use xlink:href="#icon-shanchu2"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="chat">
+    <ul class="chat__list">
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">风之谷：</span>
+          <span>主播主播你为什么不理我？</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">Taylor：</span>
+          <span>老师帅气！</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">风之谷：</span>
+          <span>主播主播你为什么不理我？</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">Taylor：</span>
+          <span>老师帅气！</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">风之谷：</span>
+          <span>主播主播你为什么不理我？</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">Taylor：</span>
+          <span>老师帅气！</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">风之谷：</span>
+          <span>主播主播你为什么不理我？</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">Taylor：</span>
+          <span>老师帅气！</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">风之谷：</span>
+          <span>主播主播你为什么不理我？</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">Taylor：</span>
+          <span>老师帅气！</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">风之谷：</span>
+          <span>主播主播你为什么不理我？</span>
+        </div>
+      </li>
+      <li class="chat__item">
+        <div class="chat__item__inner">
+          <span class="chat__item__name">Taylor：</span>
+          <span>老师帅气！</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mod-send">
+    <div class="mod-send-field">
+      <svg class="mbui-icon mbui-fs-12 mbui-color-white mbui-mr-10" aria-hidden="true">
+        <use xlink:href="#icon-msg"></use>
+      </svg>
+      <input class="mbui-input mbui-full-width" id="sendInput" type="text" placeholder="想问主播什么问题？">
+    </div>
+    <a class="mbui-btn mbui-btn-primary mbui-btn-round mbui-btn-sm mbui-ml-5 js-send" href="javascript:;">发送</a>
+  </div>
+
+  <script src="js/lib/jquery-2.2.3.min.js"></script>
+  <script src="js/plugins/swiper.min.js"></script>
+  <script src="https://at.alicdn.com/t/font_284017_b3x9plsuag6.js"></script>
+  <script src="js/mbui.min.js"></script>
+  <script>
+    // 滚动公告
+    swiper.initSwiperNotice();
+
+    // 倒计时
+    var dater = new Date();
+    var timer = (dater.getFullYear()) + '-05-30 19:20:00';
+    common.initCountdown(timer, '#countdown', 3);
+
+    // 视频
+    var video = document.createElement('video');
+    !(function (doc) {
+      var cont = doc.getElementById("video-container");
+      var cw = window.innerWidth;
+      var ch = window.innerHeight;
+
+      var canvas = document.createElement('canvas');
+      canvas.width = cw;
+      canvas.height = ch;
+      canvas.style.zIndex = 8;
+      canvas.style.position = "absolute";
+      cont.appendChild(canvas);
+      var cont2D = canvas.getContext("2d");
+
+      video.preload = "auto";
+      video.volume = 0.3;
+      video.setAttribute('x-webkit-airplay', true);
+      video.setAttribute('webkit-playsinline', true);
+      video.setAttribute('playsinline', true);
+      video.setAttribute('webkit-playsinline', 'webkit-playsinline');
+      video.src = 'http://1258987737.vod2.myqcloud.com/00ba4063vodtranscq1258987737/879fbb3c5285890789293485218/v.f40.mp4';
+      // video.autoplay = "autoplay"; //是自动播放
+      // video.play();
+
+      video.addEventListener("play", function () {
+        draw(this, canvas, cont2D, cw, ch);
+      }, false)
+
+      function cerateCanvas(w, h) {
+        var cr = doc.createElement("canvas");
+        cr.width = w;
+        cr.height = h;
+        return cr;
+      }
+
+      function draw(v, c, c2, w, h) {
+        if (v.paused || v.ended) {
+          cancelAnimationFrame(stop);
+          return false;
+        }
+        c2.drawImage(v, 0, 0, w, h);
+        var stop = requestAnimationFrame(function () {
+          draw(v, c, c2, w, h);
+        });
+      }
+
+    })(document);
+
+    // 视频播放
+    $('.js-play').on('click', function () {
+      $(this).parent().hide();
+      video.play();
+    })
+
+    // 关闭关注引导
+    $('.js-user-close').on('click', function () {
+      $(this).parent().hide();
+    })
+
+    // 发送聊天
+    $('.js-send').on('click', function () {
+      var _sendVal = $('#sendInput').val();
+      if (_sendVal) {
+        var _html = '<li class="chat__item">';
+        _html += '<div class="chat__item__inner">';
+        // 用户名到时动态获取
+        _html += '<span class="chat__item__name">用户名：</span>';
+        _html += '<span>'+_sendVal+'</span>';
+        _html += '</div>';
+        _html += '</li>';
+        $('.chat__list').append(_html);
+        var _scrollPos = $('.chat__list').find('.chat__item:last-of-type').position().top + $('.chat__list').scrollTop();
+        console.log(_scrollPos);
+        $('.chat__list').stop(true, false).animate({
+          scrollTop: _scrollPos
+        }, 600);
+      } else {
+        $('#sendInput').focus();
+        new Toast({ content: '发送内容不能为空！', duration: 2000 });
+      }
+    })
+  </script>
+</body>
+
+</html>

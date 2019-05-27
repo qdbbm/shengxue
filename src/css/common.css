@@ -333,6 +333,24 @@ body {
   background-position: 0px -812px;
 }
 
+.icon-cry {
+  display: inline-block;
+  width: 50px;
+  height: 56px;
+  background: url("../images/cry-img.png") no-repeat;
+  background-size: 50px auto;
+  vertical-align: middle;
+}
+
+.icon-play3 {
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background: url("../images/video-play.png") no-repeat;
+  background-size: 58px auto;
+  vertical-align: middle;
+}
+
 /* 标签 */
 .mod-label {
   position: relative;
@@ -1147,31 +1165,44 @@ body {
 }
 
 .mod-send {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 1200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 7px 12px;
-  background: #fff;
 }
 
 .mod-send-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   overflow: hidden;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 15px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
 }
 
 .mod-send .mbui-input {
-  height: 35px;
-  line-height: 35px;
-  padding: 0 20px;
-  background: #f6f6f6;
-  border-radius: 20px;
+  color: #fff;
+}
+
+.mod-send .mbui-input::-webkit-input-placeholder {
+  color: #fff;
 }
 
 .mod-send .mbui-btn {
@@ -1505,4 +1536,18 @@ body {
 
 .mbui-remind-num {
   padding: 0 5px;
+}
+
+.mbui-btn-xs {
+  height: 20px;
+  padding: 0 .5em;
+  line-height: 18px;
+}
+
+.mbui-btn-success {
+  background: #11e39b;
+}
+
+.mbui-btn-success:hover {
+  background: #0fcb8b;
 }
