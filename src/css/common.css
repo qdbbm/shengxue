@@ -1551,3 +1551,36 @@ body {
 .mbui-btn-success:hover {
   background: #0fcb8b;
 }
+
+/* 分类导航 */
+.com-category-nav {
+  width: 80px;
+}
+
+.com-category-nav__item {
+  display: block;
+  padding: 13px 5px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.com-category-nav__item.active {
+  background: #f6f9fa;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.com-category-nav__item.active .ccni__tle {
+  position: relative;
+}
+
+.com-category-nav__item.active .ccni__tle:after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #009bf7;
+  border-radius: 8px;
+  content: "";
+}

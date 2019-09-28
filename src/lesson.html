@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name=" renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>课程列表</title>
+  <link rel="stylesheet" href="css/mbui.min.css">
+  <!-- build:css css/site.min.css -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/page.css">
+  <!-- endbuild -->
+</head>
+
+<body class="mbui-page-flex mbui-page-flex--row">
+  <header class="mbui-header">
+    <div class="mbui-header-left" onclick="javascript:history.back();">
+      <i class="mbui-icon-v-left mbui-header-icon"></i>
+    </div>
+    <h1 class="page-tt">课程列表</h1>
+  </header>
+  <!-- 头部 -->
+
+  <main id="pages" class="mbui-page-wrap">
+    <div class="mbui-page">
+      <nav class="com-category-nav">
+        <a class="com-category-nav__item active" href="#">
+          <span class="ccni__tle">全部</span>
+        </a>
+        <a class="com-category-nav__item" href="#">
+          <span class="ccni__tle">音频硬件</span>
+        </a>
+        <a class="com-category-nav__item" href="#">
+          <span class="ccni__tle">数字控台</span>
+        </a>
+        <a class="com-category-nav__item" href="#">
+          <span class="ccni__tle">声学软件</span>
+        </a>
+        <a class="com-category-nav__item" href="#">
+          <span class="ccni__tle">其他分类</span>
+        </a>
+      </nav>
+      <div class="mbui-page-container" style="background: #f6f9fa;">
+        <div class="mod-course-list mbui-ptb-15 mbui-plr-10">
+          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+            <div class="mod-course-item__inner">
+              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+              </div>
+            </div>
+            <span class="mod-label">免费</span>
+          </div>
+          <!-- /item -->
+
+          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+            <div class="mod-course-item__inner">
+              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+              </div>
+            </div>
+            <span class="mod-label">免费</span>
+          </div>
+          <!-- /item -->
+
+          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+            <div class="mod-course-item__inner">
+              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+              </div>
+            </div>
+            <span class="mod-label mod-label--gradient">VIP</span>
+          </div>
+          <!-- /item -->
+
+          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+            <div class="mod-course-item__inner">
+              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+              </div>
+            </div>
+            <span class="mod-label">免费</span>
+          </div>
+          <!-- /item -->
+
+          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+            <div class="mod-course-item__inner">
+              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+              </div>
+            </div>
+            <span class="mod-label">免费</span>
+          </div>
+          <!-- /item -->
+        </div>
+      </div>
+    </div>
+    <!-- end .page -->
+  </main>
+  <!-- end .page-wrap -->
+  <script src="js/lib/jquery-2.2.3.min.js"></script>
+  <script src="https://at.alicdn.com/t/font_284017_lzdaq4i8pc.js"></script>
+  <script src="js/mbui.min.js"></script>
+</body>
+
+</html>

@@ -1506,3 +1506,36 @@ body {
     background: darken(#11e39b, 5%);
   }
 }
+
+/* 分类导航 */
+.com-category-nav {
+  width: 80px;
+
+  &__item {
+    display: block;
+    padding: 13px 5px;
+    font-size: 13px;
+    text-align: center;
+
+    &.active {
+      background: #f6f9fa;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+
+      .ccni__tle {
+        position: relative;
+        
+        &:after {
+          position: absolute;
+          bottom: -8px;
+          left: 0;
+          right: 0;
+          height: 4px;
+          background: $primary;
+          border-radius: 8px;
+          content: "";
+        }
+      }
+    }
+  }
+}
