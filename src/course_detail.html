@@ -36,9 +36,28 @@
   <main id="pages" class="mbui-page-wrap">
     <div class="mbui-page mbui-page--has-footer">
       <div class="course-video">
-        <video src="http://www.w3school.com.cn/i/movie.ogg" controls="controls">
+        <video src="http://www.w3school.com.cn/i/movie.ogg" controls="controls" x5-playsinline="true"
+          webkit-playsinline="true" playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5"
+          x5-video-player-fullscreen="true">
           your browser does not support the video tag
         </video>
+        <div class="video-mask">
+          <div class="video-mask__bd">
+            <p>试看已结束，购买一张直播券或开通VIP免费学习继续观看</p>
+            <p class="video-mask__txt mbui-mt-20">
+              <span>
+                <svg class="mbui-icon" aria-hidden="true">
+                  <use xlink:href="#icon-huanyipi"></use>
+                </svg>
+                <span class="mbui-vam">重播</span>
+              </span>
+            </p>
+            <p class="mbui-mt-20">
+              <a class="mbui-btn mbui-btn-outline-white mbui-btn-sm" href="#">购买直播券</a>
+              <a class="mbui-btn mbui-btn-sm mbui-btn-primary mbui-ml-10" href="#">开通VIP会员</a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="mbui-plr-15">
