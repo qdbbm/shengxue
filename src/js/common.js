@@ -56,6 +56,11 @@ $(function () {
         $(this).parent().siblings('.mod-comment-bar__btn').addClass('mbui-hide');
     })
 
+    // 分类导航
+    $('.js-category-nav').on('click', '.com-category-nav__item', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+
 })
 
 function openShareTips() {

@@ -18,7 +18,7 @@
   <!-- endbuild -->
 </head>
 
-<body class="mbui-page-flex mbui-page-flex--row">
+<body>
   <header class="mbui-header">
     <div class="mbui-header-left" onclick="javascript:history.back();">
       <i class="mbui-icon-v-left mbui-header-icon"></i>
@@ -29,70 +29,75 @@
 
   <main id="pages" class="mbui-page-wrap">
     <div class="mbui-page">
-      <nav class="com-category-nav">
-        <a class="com-category-nav__item active" href="#">
-          <span class="ccni__tle">全部</span>
-        </a>
-        <a class="com-category-nav__item" href="#">
-          <span class="ccni__tle">音频硬件</span>
-        </a>
-        <a class="com-category-nav__item" href="#">
-          <span class="ccni__tle">数字控台</span>
-        </a>
-        <a class="com-category-nav__item" href="#">
-          <span class="ccni__tle">声学软件</span>
-        </a>
-        <a class="com-category-nav__item" href="#">
-          <span class="ccni__tle">其他分类</span>
-        </a>
-      </nav>
-      <div class="mbui-page-container" style="background: #f6f9fa;">
-        <div class="mod-course-list mbui-ptb-15 mbui-plr-10">
-          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-            <div class="mod-course-item__inner">
-              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+      <div class="com-full-container">
+        <nav class="com-category-nav js-category-nav">
+          <a class="com-category-nav__item active" href="javascript:;">
+            <span class="ccni__tle">全部</span>
+          </a>
+          <a class="com-category-nav__item" href="javascript:;">
+            <span class="ccni__tle">音频硬件</span>
+          </a>
+          <a class="com-category-nav__item" href="javascript:;">
+            <span class="ccni__tle">数字控台</span>
+          </a>
+          <a class="com-category-nav__item" href="javascript:;">
+            <span class="ccni__tle">声学软件</span>
+          </a>
+          <a class="com-category-nav__item" href="javascript:;">
+            <span class="ccni__tle">其他分类</span>
+          </a>
+        </nav>
+        <!-- /nav -->
+        
+        <div class="com-full-bd">
+          <div class="mod-course-list mbui-ptb-15 mbui-plr-10">
+            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+              <div class="mod-course-item__inner">
+                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+                </div>
               </div>
+              <span class="mod-label">免费</span>
             </div>
-            <span class="mod-label">免费</span>
-          </div>
-          <!-- /item -->
-
-          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-            <div class="mod-course-item__inner">
-              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+            <!-- /item -->
+    
+            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+              <div class="mod-course-item__inner">
+                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+                </div>
               </div>
+              <span class="mod-label">免费</span>
             </div>
-            <span class="mod-label">免费</span>
-          </div>
-          <!-- /item -->
-
-          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-            <div class="mod-course-item__inner">
-              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+            <!-- /item -->
+    
+            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+              <div class="mod-course-item__inner">
+                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+                </div>
               </div>
+              <span class="mod-label mod-label--gradient">VIP</span>
             </div>
-            <span class="mod-label mod-label--gradient">VIP</span>
-          </div>
-          <!-- /item -->
-
-          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-            <div class="mod-course-item__inner">
-              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+            <!-- /item -->
+    
+            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+              <div class="mod-course-item__inner">
+                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+                </div>
               </div>
+              <span class="mod-label">免费</span>
             </div>
-            <span class="mod-label">免费</span>
-          </div>
-          <!-- /item -->
-
-          <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-            <div class="mod-course-item__inner">
-              <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+            <!-- /item -->
+    
+            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
+              <div class="mod-course-item__inner">
+                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
+                </div>
               </div>
+              <span class="mod-label">免费</span>
             </div>
-            <span class="mod-label">免费</span>
+            <!-- /item -->
           </div>
-          <!-- /item -->
         </div>
+        <!-- /content -->
       </div>
     </div>
     <!-- end .page -->
@@ -101,6 +106,7 @@
   <script src="js/lib/jquery-2.2.3.min.js"></script>
   <script src="https://at.alicdn.com/t/font_284017_lzdaq4i8pc.js"></script>
   <script src="js/mbui.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 
 </html>
