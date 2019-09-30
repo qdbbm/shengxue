@@ -36,16 +36,15 @@
   <main id="pages" class="mbui-page-wrap">
     <div class="mbui-page mbui-page--has-footer">
       <div class="course-video">
-        <video src="http://www.w3school.com.cn/i/movie.ogg" controls="controls" x5-playsinline="true"
-          webkit-playsinline="true" playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5"
-          x5-video-player-fullscreen="true">
+        <video id="myVideo" src="http://www.w3school.com.cn/i/movie.ogg" controls="controls" x5-playsinline="true"
+          webkit-playsinline="true" playsinline="true" x-webkit-airplay="true">
           your browser does not support the video tag
         </video>
         <div class="video-mask">
           <div class="video-mask__bd">
             <p>试看已结束，购买一张直播券或开通VIP免费学习继续观看</p>
             <p class="video-mask__txt mbui-mt-20">
-              <span>
+              <span class="js-replay">
                 <svg class="mbui-icon" aria-hidden="true">
                   <use xlink:href="#icon-huanyipi"></use>
                 </svg>
@@ -255,6 +254,23 @@
   <script src="js/common.js"></script>
   <script>
     swiper.initSwiperTab(3, $('#mbui-swiper-tab-tle'), $('#mbui-swiper-tab-container'));
+
+    $(function () {
+
+      // 监听试看视频是否播放结束
+      $('#myVideo').on('error ended', function () {
+        $(this).addClass('mbui-hide');
+        $('.video-mask').addClass('video-mask--show')
+      })
+
+      // 重播
+      $('.js-replay').on('click', function () {
+        $('#myVideo').removeClass('mbui-hide');
+        $('.video-mask').removeClass('video-mask--show');
+        $('#myVideo').get(0).play();
+      })
+
+    })
   </script>
 </body>
 
