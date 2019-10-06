@@ -1,112 +1,519 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name=" renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>课程列表</title>
+    <link rel="stylesheet" href="css/mbui.min.css" />
+    <!-- build:css css/site.min.css -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <!-- endbuild -->
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="format-detection" content="telephone=no, email=no">
-  <meta name=" renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <title>课程列表</title>
-  <link rel="stylesheet" href="css/mbui.min.css">
-  <!-- build:css css/site.min.css -->
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/page.css">
-  <!-- endbuild -->
-</head>
-
-<body>
-  <header class="mbui-header">
-    <div class="mbui-header-left" onclick="javascript:history.back();">
-      <i class="mbui-icon-v-left mbui-header-icon"></i>
-    </div>
-    <h1 class="page-tt">课程列表</h1>
-  </header>
-  <!-- 头部 -->
-
-  <main id="pages" class="mbui-page-wrap">
-    <div class="mbui-page">
-      <div class="com-full-container">
-        <nav class="com-category-nav js-category-nav">
-          <a class="com-category-nav__item active" href="javascript:;">
-            <span class="ccni__tle">全部</span>
-          </a>
-          <a class="com-category-nav__item" href="javascript:;">
-            <span class="ccni__tle">音频硬件</span>
-          </a>
-          <a class="com-category-nav__item" href="javascript:;">
-            <span class="ccni__tle">数字控台</span>
-          </a>
-          <a class="com-category-nav__item" href="javascript:;">
-            <span class="ccni__tle">声学软件</span>
-          </a>
-          <a class="com-category-nav__item" href="javascript:;">
-            <span class="ccni__tle">其他分类</span>
-          </a>
-        </nav>
-        <!-- /nav -->
-        
-        <div class="com-full-bd">
-          <div class="mod-course-list mbui-ptb-15 mbui-plr-10">
-            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-              <div class="mod-course-item__inner">
-                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
-                </div>
-              </div>
-              <span class="mod-label">免费</span>
-            </div>
-            <!-- /item -->
-    
-            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-              <div class="mod-course-item__inner">
-                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
-                </div>
-              </div>
-              <span class="mod-label">免费</span>
-            </div>
-            <!-- /item -->
-    
-            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-              <div class="mod-course-item__inner">
-                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
-                </div>
-              </div>
-              <span class="mod-label mod-label--gradient">VIP</span>
-            </div>
-            <!-- /item -->
-    
-            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-              <div class="mod-course-item__inner">
-                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
-                </div>
-              </div>
-              <span class="mod-label">免费</span>
-            </div>
-            <!-- /item -->
-    
-            <div class="mod-course-item" onclick="javascript:common.goPage('course_detail.html');">
-              <div class="mod-course-item__inner">
-                <div class="mod-course-item__img mbui-bg-cover" style="background-image: url(images/xbyz.jpg);">
-                </div>
-              </div>
-              <span class="mod-label">免费</span>
-            </div>
-            <!-- /item -->
-          </div>
-        </div>
-        <!-- /content -->
+  <body>
+    <header class="mbui-header">
+      <div class="mbui-header-left" onclick="javascript:history.back();">
+        <i class="mbui-icon-v-left mbui-header-icon"></i>
       </div>
-    </div>
-    <!-- end .page -->
-  </main>
-  <!-- end .page-wrap -->
-  <script src="js/lib/jquery-2.2.3.min.js"></script>
-  <script src="https://at.alicdn.com/t/font_284017_lzdaq4i8pc.js"></script>
-  <script src="js/mbui.min.js"></script>
-  <script src="js/common.js"></script>
-</body>
+      <h1 class="page-tt">课程列表</h1>
+    </header>
+    <!-- 头部 -->
 
+    <main id="pages" class="mbui-page-wrap">
+      <div class="mbui-page">
+        <div class="com-full-container">
+          <nav class="com-category-nav js-side-nav">
+            <a
+              class="com-category-nav__item active"
+              href="javascript:;"
+              data-rel="all"
+            >
+              <span class="ccni__tle">全部</span>
+            </a>
+            <a
+              class="com-category-nav__item"
+              href="javascript:;"
+              data-rel="ypyj"
+            >
+              <span class="ccni__tle">音频硬件</span>
+            </a>
+            <a
+              class="com-category-nav__item"
+              href="javascript:;"
+              data-rel="sxkt"
+            >
+              <span class="ccni__tle">数字控台</span>
+            </a>
+            <a
+              class="com-category-nav__item"
+              href="javascript:;"
+              data-rel="sxrj"
+            >
+              <span class="ccni__tle">声学软件</span>
+            </a>
+            <a
+              class="com-category-nav__item"
+              href="javascript:;"
+              data-rel="qtfl"
+            >
+              <span class="ccni__tle">其他分类</span>
+            </a>
+          </nav>
+          <!-- /nav -->
+
+          <div class="com-full-bd">
+            <div class="handle-scroll" id="all">
+              <h3 class="mbui-pd-10 mbui-fw-700">全部</h3>
+              <div class="mod-course-list mbui-ptb-15 mbui-plr-10">
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label mod-label--gradient">VIP</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+              </div>
+            </div>
+            <!-- /全部 -->
+
+            <div class="handle-scroll" id="ypyj">
+              <h3 class="mbui-pd-10 mbui-fw-700">音频硬件</h3>
+              <div class="mod-course-list mbui-ptb-15 mbui-plr-10">
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label mod-label--gradient">VIP</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+              </div>
+            </div>
+            <!-- /音频硬件 -->
+
+            <div class="handle-scroll" id="sxkt">
+              <h3 class="mbui-pd-10 mbui-fw-700">数学控台</h3>
+              <div class="mod-course-list mbui-ptb-15 mbui-plr-10">
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label mod-label--gradient">VIP</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+              </div>
+            </div>
+            <!-- /数学控台 -->
+
+            <div class="handle-scroll" id="sxrj">
+              <h3 class="mbui-pd-10 mbui-fw-700">声学软件</h3>
+              <div class="mod-course-list mbui-ptb-15 mbui-plr-10">
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label mod-label--gradient">VIP</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+              </div>
+            </div>
+            <!-- /声学软件 -->
+
+            <div class="handle-scroll" id="qtfl">
+              <h3 class="mbui-pd-10 mbui-fw-700">其他分类</h3>
+              <div class="mod-course-list mbui-ptb-15 mbui-plr-10">
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label mod-label--gradient">VIP</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+
+                <div
+                  class="mod-course-item"
+                  onclick="javascript:common.goPage('course_detail.html');"
+                >
+                  <div class="mod-course-item__inner">
+                    <div
+                      class="mod-course-item__img mbui-bg-cover"
+                      style="background-image: url(images/xbyz.jpg);"
+                    ></div>
+                  </div>
+                  <span class="mod-label">免费</span>
+                </div>
+                <!-- /item -->
+              </div>
+            </div>
+            <!-- /其他分类 -->
+          </div>
+          <!-- /content -->
+        </div>
+      </div>
+      <!-- end .page -->
+    </main>
+    <!-- end .page-wrap -->
+    <script src="js/lib/jquery-2.2.3.min.js"></script>
+    <script src="https://at.alicdn.com/t/font_284017_lzdaq4i8pc.js"></script>
+    <script src="js/mbui.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+      function scrollTo(obj, distance) {
+        obj.animate(
+          {
+            scrollTop: distance
+          },
+          400
+        );
+      }
+
+      $(function() {
+        // 点击左侧导航，右侧滚动到对应列表
+        $(".js-side-nav").on("click", ".com-category-nav__item", function() {
+          $(this)
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+          var _goId = $(this).data("rel"),
+              _goDistance = $("#" + _goId).position().top,
+              _scrollTop = $(".com-full-bd").scrollTop();
+          console.log(_goId, _goDistance);
+          scrollTo($(".com-full-bd"), _goDistance + _scrollTop + 5);
+          $(this).blur();
+          return !1;
+        });
+
+        // 右侧滚动，左侧自动切换到对应分类
+        var _canRun = true;
+        $(".com-full-bd").on("scroll", function() {
+          var _this = $(this);
+          if (!_canRun) {
+            return false;
+          }
+          _canRun = false;
+          setTimeout(function() {
+            var _scrollTop = _this.scrollTop();
+            _this.find(".handle-scroll").each(function() {
+              if (_scrollTop >= $(this).position().top + _scrollTop) {
+                $(".com-category-nav__item").removeClass("active");
+                $(
+                  ".com-category-nav__item[data-rel=" + $(this).attr("id") + "]"
+                ).addClass("active");
+              }
+            });
+            _sideNavGoDistance =
+              $(".com-category-nav__item.active").position().top +
+              $(".com-category-nav").scrollTop();
+            scrollTo($(".com-category-nav"), _sideNavGoDistance);
+            _canRun = true;
+          }, 500);
+        });
+      });
+    </script>
+  </body>
 </html>
